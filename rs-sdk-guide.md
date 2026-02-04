@@ -1,18 +1,18 @@
 ---
 layout: default
-title: OpenCode 가이드
-permalink: /opencode-guide/
+title: RS-SDK 가이드
+permalink: /rs-sdk-guide/
 ---
 
 <section class="guide-header">
-  <h1 class="guide-main-title">🚀 OpenCode 완벽 가이드</h1>
-  <p class="guide-subtitle">오픈소스 AI 코딩 에이전트의 모든 것</p>
+  <h1 class="guide-main-title">🎮 RS-SDK 완벽 가이드</h1>
+  <p class="guide-subtitle">RuneScape 스타일 봇 개발을 위한 연구용 SDK</p>
 </section>
 
 <section class="guide-intro">
   <div class="intro-box">
-    <p><strong>OpenCode</strong>는 Claude Code와 유사한 기능을 제공하는 100% 오픈소스 AI 코딩 에이전트입니다. 특정 AI 프로바이더에 종속되지 않으며, 강력한 TUI(Terminal UI), LSP 지원, 클라이언트-서버 아키텍처를 제공합니다.</p>
-    <p>이 가이드는 OpenCode의 설치부터 고급 활용까지 상세하게 다룹니다.</p>
+    <p><strong>RS-SDK</strong>는 RuneScape 스타일의 MMO 게임에서 봇을 개발하고 연구할 수 있는 오픈소스 스타터 킷입니다. TypeScript SDK, 에이전트 문서, 서버 에뮬레이터를 포함하며, Claude Code와의 MCP 통합을 지원합니다.</p>
+    <p>AI 에이전트 연구, 목표 지향적 프로그램 합성 기법(Ralph loops 등) 실험, 에이전트 간 협력/경쟁 연구를 위한 풍부한 테스트 환경을 제공합니다.</p>
   </div>
 </section>
 
@@ -20,83 +20,83 @@ permalink: /opencode-guide/
   <h2 class="toc-title">📚 목차</h2>
 
   <div class="toc-grid">
-    <a href="{{ '/opencode-guide-01-intro/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-01-intro/' | relative_url }}" class="toc-item">
       <span class="toc-number">01</span>
       <div class="toc-content">
-        <h3>소개 및 주요 특징</h3>
-        <p>OpenCode란? Claude Code와의 차이점, 핵심 기능 개요</p>
+        <h3>소개</h3>
+        <p>RS-SDK란? 프로젝트 목표, LostCity 엔진 기반</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-02-installation/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-02-architecture/' | relative_url }}" class="toc-item">
       <span class="toc-number">02</span>
       <div class="toc-content">
-        <h3>설치 가이드</h3>
-        <p>npm, Homebrew, Scoop, 데스크톱 앱 설치 방법</p>
+        <h3>아키텍처</h3>
+        <p>Engine, WebClient, Gateway, SDK 구조</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-03-architecture/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-03-getting-started/' | relative_url }}" class="toc-item">
       <span class="toc-number">03</span>
       <div class="toc-content">
-        <h3>아키텍처</h3>
-        <p>모노레포 구조, 클라이언트-서버 모델, 패키지 구성</p>
+        <h3>시작하기</h3>
+        <p>설치, 봇 생성, 첫 스크립트 작성</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-04-agents/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-04-sdk-api/' | relative_url }}" class="toc-item">
       <span class="toc-number">04</span>
       <div class="toc-content">
-        <h3>에이전트 시스템</h3>
-        <p>Build, Plan, Explore 에이전트 및 커스텀 에이전트 생성</p>
+        <h3>SDK API</h3>
+        <p>BotSDK (저수준)와 BotActions (고수준) API</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-05-tools/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-05-mcp/' | relative_url }}" class="toc-item">
       <span class="toc-number">05</span>
       <div class="toc-content">
-        <h3>내장 도구</h3>
-        <p>Edit, Bash, Read, Grep, WebFetch 등 AI 도구 상세 설명</p>
+        <h3>MCP 통합</h3>
+        <p>Claude Code 인터랙티브 봇 제어</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-06-providers/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-06-skills/' | relative_url }}" class="toc-item">
       <span class="toc-number">06</span>
       <div class="toc-content">
-        <h3>AI 프로바이더</h3>
-        <p>Anthropic, OpenAI, Google, Azure 등 멀티 프로바이더 지원</p>
+        <h3>스킬 자동화</h3>
+        <p>Woodcutting, Mining, Fishing, Combat 등</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-07-configuration/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-07-economy/' | relative_url }}" class="toc-item">
       <span class="toc-number">07</span>
       <div class="toc-content">
-        <h3>설정 및 권한</h3>
-        <p>opencode.json 설정, 권한 시스템, 환경 변수</p>
+        <h3>경제 시스템</h3>
+        <p>뱅킹, 쇼핑, 아이템 관리</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-08-mcp/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-08-navigation/' | relative_url }}" class="toc-item">
       <span class="toc-number">08</span>
       <div class="toc-content">
-        <h3>MCP 통합</h3>
-        <p>Model Context Protocol 서버 연동 및 도구 확장</p>
+        <h3>이동 & 경로</h3>
+        <p>Pathfinding, 게이트, 문 열기</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-09-tui-desktop/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-09-best-practices/' | relative_url }}" class="toc-item">
       <span class="toc-number">09</span>
       <div class="toc-content">
-        <h3>TUI & 데스크톱 앱</h3>
-        <p>터미널 UI 사용법, Tauri 기반 데스크톱 앱</p>
+        <h3>베스트 프랙티스</h3>
+        <p>에러 처리, 검증 패턴, 팁</p>
       </div>
     </a>
 
-    <a href="{{ '/opencode-guide-10-lsp-skills/' | relative_url }}" class="toc-item">
+    <a href="{{ '/rs-sdk-guide-10-hosting/' | relative_url }}" class="toc-item">
       <span class="toc-number">10</span>
       <div class="toc-content">
-        <h3>LSP & 스킬 시스템</h3>
-        <p>Language Server Protocol 지원, 커스텀 스킬 작성</p>
+        <h3>서버 호스팅</h3>
+        <p>로컬 서버 설정, 배포</p>
       </div>
     </a>
   </div>
@@ -106,34 +106,34 @@ permalink: /opencode-guide/
   <h2>✨ 주요 특징</h2>
   <div class="features-grid">
     <div class="feature-item">
-      <span class="feature-icon">🔓</span>
-      <h4>100% 오픈소스</h4>
-      <p>MIT 라이선스로 완전 공개된 소스 코드</p>
+      <span class="feature-icon">🔬</span>
+      <h4>연구 지향</h4>
+      <p>AI 에이전트 연구를 위한 안전한 테스트 환경</p>
     </div>
     <div class="feature-item">
-      <span class="feature-icon">🔀</span>
-      <h4>프로바이더 독립</h4>
-      <p>Claude, OpenAI, Google, 로컬 모델 모두 지원</p>
+      <span class="feature-icon">🤖</span>
+      <h4>Claude 통합</h4>
+      <p>MCP를 통한 Claude Code 인터랙티브 제어</p>
     </div>
     <div class="feature-item">
-      <span class="feature-icon">📟</span>
-      <h4>TUI 중심 설계</h4>
-      <p>Neovim 사용자를 위한 터미널 네이티브 경험</p>
+      <span class="feature-icon">📝</span>
+      <h4>TypeScript SDK</h4>
+      <p>강력한 타입 지원의 봇 자동화 라이브러리</p>
     </div>
     <div class="feature-item">
-      <span class="feature-icon">🖥️</span>
-      <h4>데스크톱 앱</h4>
-      <p>Tauri v2 기반 네이티브 데스크톱 애플리케이션</p>
+      <span class="feature-icon">🏆</span>
+      <h4>리더보드</h4>
+      <p>봇 순위 시스템 및 경쟁</p>
     </div>
     <div class="feature-item">
-      <span class="feature-icon">🔌</span>
-      <h4>LSP 통합</h4>
-      <p>기본 내장된 Language Server Protocol 지원</p>
+      <span class="feature-icon">🎯</span>
+      <h4>목표 지향</h4>
+      <p>Ralph loops 등 프로그램 합성 기법 연구</p>
     </div>
     <div class="feature-item">
       <span class="feature-icon">🌐</span>
-      <h4>클라이언트-서버</h4>
-      <p>원격 제어 가능한 분리된 아키텍처</p>
+      <h4>완전 오픈소스</h4>
+      <p>서버, 클라이언트, SDK 모두 공개</p>
     </div>
   </div>
 </section>
@@ -141,37 +141,40 @@ permalink: /opencode-guide/
 <section class="guide-quickstart">
   <h2>🚀 빠른 시작</h2>
   <div class="quickstart-box">
-    <h4>설치</h4>
-    <pre><code># npm으로 설치
-npm i -g opencode-ai@latest
+    <h4>설치 및 봇 생성</h4>
+    <pre><code># 저장소 클론
+git clone https://github.com/MaxBittker/rs-sdk.git
+cd rs-sdk
 
-# Homebrew (macOS/Linux)
-brew install anomalyco/tap/opencode
+# 의존성 설치
+bun install
 
-# 또는 curl로 직접 설치
-curl -fsSL https://opencode.ai/install | bash</code></pre>
+# 봇 생성
+bun scripts/create-bot.ts mybot
 
-    <h4>실행</h4>
-    <pre><code># 프로젝트 디렉토리에서 실행
-cd your-project
-opencode</code></pre>
+# 봇 실행
+bun bots/mybot/script.ts</code></pre>
+
+    <h4>Claude Code와 함께 사용</h4>
+    <pre><code># Claude Code에서 자동 MCP 연동
+claude "start a new bot with name: mybot"</code></pre>
   </div>
 </section>
 
 <section class="guide-links">
   <h2>🔗 관련 링크</h2>
   <div class="links-grid">
-    <a href="https://github.com/anomalyco/opencode" target="_blank" class="link-item">
+    <a href="https://github.com/MaxBittker/rs-sdk" target="_blank" class="link-item">
       <span>📦</span> GitHub 저장소
     </a>
-    <a href="https://opencode.ai/docs" target="_blank" class="link-item">
-      <span>📚</span> 공식 문서
+    <a href="https://rs-sdk-demo.fly.dev/hiscores" target="_blank" class="link-item">
+      <span>🏆</span> 리더보드
     </a>
-    <a href="https://opencode.ai/discord" target="_blank" class="link-item">
-      <span>💬</span> Discord 커뮤니티
+    <a href="https://discord.gg/3DcuU5cMJN" target="_blank" class="link-item">
+      <span>💬</span> Discord
     </a>
-    <a href="https://opencode.ai/zen" target="_blank" class="link-item">
-      <span>☯️</span> OpenCode Zen
+    <a href="https://lostcity.rs" target="_blank" class="link-item">
+      <span>🏛️</span> LostCity
     </a>
   </div>
 </section>
@@ -180,7 +183,7 @@ opencode</code></pre>
 .guide-header {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
   color: white;
   border-radius: 16px;
   margin-bottom: 2rem;
@@ -251,13 +254,13 @@ opencode</code></pre>
 .toc-item:hover {
   transform: translateX(8px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-color: #059669;
+  border-color: #7c3aed;
 }
 
 .toc-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #059669;
+  color: #7c3aed;
   min-width: 50px;
   text-align: center;
 }
@@ -334,7 +337,7 @@ opencode</code></pre>
 
 .quickstart-box h4 {
   margin: 0 0 0.75rem 0;
-  color: #059669;
+  color: #7c3aed;
 }
 
 .quickstart-box pre {
@@ -384,13 +387,13 @@ opencode</code></pre>
 }
 
 .link-item:hover {
-  border-color: #059669;
-  color: #059669;
+  border-color: #7c3aed;
+  color: #7c3aed;
 }
 
 @media (prefers-color-scheme: dark) {
   .guide-header {
-    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
   }
 
   .intro-box, .toc-item, .feature-item, .link-item {

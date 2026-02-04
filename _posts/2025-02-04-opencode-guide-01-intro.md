@@ -220,4 +220,4 @@ opencode auth
 
 ---
 
-**다음 글**: [설치 가이드](/2025/02/04/opencode-guide-02-installation)
+**다음 글**: [설치 가이드](/opencode-guide-02-installation/)

@@ -341,6 +341,6 @@ interface Plugin {
 
 ---
 
-**이전 글**: [설치 가이드](/2025/02/04/opencode-guide-02-installation)
+**이전 글**: [설치 가이드](/opencode-guide-02-installation/)
 
-**다음 글**: [에이전트 시스템](/2025/02/04/opencode-guide-04-agents)
+**다음 글**: [에이전트 시스템](/opencode-guide-04-agents/)

@@ -441,6 +441,6 @@ export default {
 
 ---
 
-**이전 글**: [TUI & 데스크톱 앱](/2025/02/04/opencode-guide-09-tui-desktop)
+**이전 글**: [TUI & 데스크톱 앱](/opencode-guide-09-tui-desktop/)
 
 **시리즈 완료!** [목차로 돌아가기](/opencode-guide/)

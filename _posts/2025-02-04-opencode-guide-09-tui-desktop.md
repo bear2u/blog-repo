@@ -353,6 +353,6 @@ packages/ui/
 
 ---
 
-**이전 글**: [MCP 통합](/2025/02/04/opencode-guide-08-mcp)
+**이전 글**: [MCP 통합](/opencode-guide-08-mcp/)
 
-**다음 글**: [LSP & 스킬 시스템](/2025/02/04/opencode-guide-10-lsp-skills)
+**다음 글**: [LSP & 스킬 시스템](/opencode-guide-10-lsp-skills/)

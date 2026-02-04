@@ -404,6 +404,6 @@ opencode auth remove anthropic
 
 ---
 
-**이전 글**: [내장 도구](/2025/02/04/opencode-guide-05-tools)
+**이전 글**: [내장 도구](/opencode-guide-05-tools/)
 
-**다음 글**: [설정 및 권한](/2025/02/04/opencode-guide-07-configuration)
+**다음 글**: [설정 및 권한](/opencode-guide-07-configuration/)

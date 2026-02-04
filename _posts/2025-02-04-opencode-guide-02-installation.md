@@ -303,6 +303,6 @@ bun run dev
 
 ---
 
-**이전 글**: [소개 및 주요 특징](/2025/02/04/opencode-guide-01-intro)
+**이전 글**: [소개 및 주요 특징](/opencode-guide-01-intro/)
 
-**다음 글**: [아키텍처](/2025/02/04/opencode-guide-03-architecture)
+**다음 글**: [아키텍처](/opencode-guide-03-architecture/)

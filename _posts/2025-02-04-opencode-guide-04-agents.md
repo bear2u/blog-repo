@@ -354,6 +354,6 @@ TUI에서 표시되는 에이전트 색상을 지정할 수 있습니다:
 
 ---
 
-**이전 글**: [아키텍처](/2025/02/04/opencode-guide-03-architecture)
+**이전 글**: [아키텍처](/opencode-guide-03-architecture/)
 
-**다음 글**: [내장 도구](/2025/02/04/opencode-guide-05-tools)
+**다음 글**: [내장 도구](/opencode-guide-05-tools/)

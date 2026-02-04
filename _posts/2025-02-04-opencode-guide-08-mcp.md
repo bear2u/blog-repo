@@ -451,6 +451,6 @@ await server.connect(transport)
 
 ---
 
-**이전 글**: [설정 및 권한](/2025/02/04/opencode-guide-07-configuration)
+**이전 글**: [설정 및 권한](/opencode-guide-07-configuration/)
 
-**다음 글**: [TUI & 데스크톱 앱](/2025/02/04/opencode-guide-09-tui-desktop)
+**다음 글**: [TUI & 데스크톱 앱](/opencode-guide-09-tui-desktop/)

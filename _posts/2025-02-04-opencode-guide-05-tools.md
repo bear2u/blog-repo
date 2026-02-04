@@ -389,6 +389,6 @@ MCP를 통해 추가 도구를 연결할 수 있습니다:
 
 ---
 
-**이전 글**: [에이전트 시스템](/2025/02/04/opencode-guide-04-agents)
+**이전 글**: [에이전트 시스템](/opencode-guide-04-agents/)
 
-**다음 글**: [AI 프로바이더](/2025/02/04/opencode-guide-06-providers)
+**다음 글**: [AI 프로바이더](/opencode-guide-06-providers/)

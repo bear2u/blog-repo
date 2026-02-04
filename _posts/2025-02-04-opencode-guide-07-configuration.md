@@ -414,6 +414,6 @@ Copy-Item opencode.json -Destination "C:\ProgramData\opencode\"
 
 ---
 
-**이전 글**: [AI 프로바이더](/2025/02/04/opencode-guide-06-providers)
+**이전 글**: [AI 프로바이더](/opencode-guide-06-providers/)
 
-**다음 글**: [MCP 통합](/2025/02/04/opencode-guide-08-mcp)
+**다음 글**: [MCP 통합](/opencode-guide-08-mcp/)
