@@ -42,7 +42,13 @@ layout: default
     <nav class="series-nav">
       <div class="series-nav-header">
         <span class="series-label">📚 {{ page.series }} 시리즈</span>
+        {% if page.series == 'claude-code-2-guide' %}
         <a href="{{ '/claude-code-2-guide/' | relative_url }}" class="series-toc-link">전체 목차 →</a>
+        {% elsif page.series == 'ui-tars-guide' %}
+        <a href="{{ '/ui-tars-guide/' | relative_url }}" class="series-toc-link">전체 목차 →</a>
+        {% else %}
+        <a href="{{ '/' | relative_url }}" class="series-toc-link">전체 목차 →</a>
+        {% endif %}
       </div>
       <div class="series-nav-buttons">
         {% assign prev_part = page.part | minus: 1 %}
