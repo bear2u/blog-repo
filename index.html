@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+---
+
+<section class="home-header">
+  <h1 class="home-title">Tech Blog</h1>
+  <p class="home-desc">AI & 개발 관련 해외 콘텐츠를 번역하여 공유합니다</p>
+</section>
+
+<section class="posts-container">
+  {% if site.posts.size > 0 %}
+  <div class="posts-list">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="post-item">
+      <div class="post-item-meta">
+        <span class="post-item-category">{{ post.category | default: '번역' }}</span>
+        <span class="post-item-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+      </div>
+      <h2 class="post-item-title">{{ post.title }}</h2>
+      <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="text-align: center; color: #999; padding: 3rem;">아직 포스트가 없습니다.</p>
+  {% endif %}
+</section>

@@ -3,205 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   {% seo %}
 </head>
 <body>
-  <!-- 읽기 진행률 표시 -->
-  <div class="progress-container">
-    <div class="progress-bar" id="progressBar"></div>
-  </div>
-
-  <div class="book-container">
-    <!-- 사이드바 (목차) -->
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <div class="book-cover">
-          <span class="book-icon">📘</span>
-        </div>
-        <h2 class="book-title">클로드 코드 2.0 가이드</h2>
-        <p class="book-subtitle">코딩 에이전트 활용법</p>
-      </div>
-
-      <nav class="toc">
-        <h3 class="toc-title">목차</h3>
-        <ul class="toc-list">
-          <li><a href="#1장-서론-및-배경" data-chapter="1">1. 서론 및 배경</a></li>
-          <li><a href="#2장-저자의-여정" data-chapter="2">2. 저자의 여정</a></li>
-          <li><a href="#3장-비기술-사용자를-위한-기술-설명" data-chapter="3">3. 기술 설명</a></li>
-          <li><a href="#4장-claude-code-20의-삶의-질-개선-기능" data-chapter="4">4. QoL 개선 기능</a></li>
-          <li><a href="#5장-명령어-및-커스터마이징" data-chapter="5">5. 명령어 & 커스터마이징</a></li>
-          <li><a href="#6장-서브-에이전트-sub-agents" data-chapter="6">6. 서브 에이전트</a></li>
-          <li><a href="#7장-task-도구" data-chapter="7">7. Task 도구</a></li>
-          <li><a href="#8장-컨텍스트-엔지니어링-심층-분석" data-chapter="8">8. 컨텍스트 엔지니어링</a></li>
-          <li><a href="#9장-스킬-및-플러그인" data-chapter="9">9. 스킬 & 플러그인</a></li>
-          <li><a href="#10장-훅-hooks" data-chapter="10">10. 훅 (Hooks)</a></li>
-          <li><a href="#11장-mcp-서버-및-코드-실행" data-chapter="11">11. MCP 서버</a></li>
-          <li><a href="#12장-저자의-개인-워크플로우" data-chapter="12">12. 워크플로우</a></li>
-          <li><a href="#13장-opus-45가-뛰어난-이유" data-chapter="13">13. Opus 4.5의 장점</a></li>
-          <li><a href="#14장-시스템-리마인더" data-chapter="14">14. 시스템 리마인더</a></li>
-          <li><a href="#15장-컨텍스트-관리-전략" data-chapter="15">15. 컨텍스트 관리</a></li>
-          <li><a href="#16장-다른-도구와의-비교" data-chapter="16">16. 도구 비교</a></li>
-          <li><a href="#17장-커뮤니티-리소스" data-chapter="17">17. 커뮤니티 리소스</a></li>
-          <li><a href="#18장-핵심-요약" data-chapter="18">18. 핵심 요약</a></li>
-        </ul>
-      </nav>
-
-      <div class="sidebar-footer">
-        <div class="author-info">
-          <span class="author-label">원저자</span>
-          <span class="author-name">Sankalp</span>
-        </div>
-      </div>
-    </aside>
-
-    <!-- 모바일 토글 버튼 -->
-    <button class="sidebar-toggle" id="sidebarToggle" aria-label="목차 열기">
-      <span class="hamburger"></span>
-    </button>
-
-    <!-- 메인 콘텐츠 -->
-    <main class="book-content">
-      <article class="chapter">
-        {{ content }}
-      </article>
-
-      <!-- 챕터 네비게이션 -->
-      <nav class="chapter-nav">
-        <a href="#" class="nav-btn prev" id="prevChapter">
-          <span class="nav-arrow">←</span>
-          <span class="nav-text">이전 챕터</span>
-        </a>
-        <span class="chapter-indicator" id="chapterIndicator">1 / 18</span>
-        <a href="#" class="nav-btn next" id="nextChapter">
-          <span class="nav-text">다음 챕터</span>
-          <span class="nav-arrow">→</span>
-        </a>
-      </nav>
-
-      <footer class="book-footer">
-        <p>원문: <a href="https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/" target="_blank">A Guide to Claude Code 2.0</a> by Sankalp</p>
-        <p class="copyright">한국어 번역 © 2025</p>
-      </footer>
-    </main>
-  </div>
-
-  <!-- 오버레이 -->
-  <div class="overlay" id="overlay"></div>
+  {% include nav.html %}
+  <main class="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
 
   <script>
-    // 읽기 진행률
-    window.addEventListener('scroll', () => {
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      document.getElementById('progressBar').style.width = scrolled + '%';
-    });
-
-    // 사이드바 토글
-    const sidebar = document.getElementById('sidebar');
-    const sidebarToggle = document.getElementById('sidebarToggle');
-    const overlay = document.getElementById('overlay');
-
-    sidebarToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
-      overlay.classList.toggle('show');
-      sidebarToggle.classList.toggle('active');
-    });
-
-    overlay.addEventListener('click', () => {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('show');
-      sidebarToggle.classList.remove('active');
-    });
-
-    // 목차 링크 클릭 시 사이드바 닫기 (모바일)
-    document.querySelectorAll('.toc-list a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 1024) {
-          sidebar.classList.remove('open');
-          overlay.classList.remove('show');
-          sidebarToggle.classList.remove('active');
-        }
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
       });
-    });
-
-    // 현재 챕터 하이라이트
-    const chapters = document.querySelectorAll('h2[id]');
-    const tocLinks = document.querySelectorAll('.toc-list a');
-    const chapterIndicator = document.getElementById('chapterIndicator');
-
-    function updateActiveChapter() {
-      let current = '';
-      let currentIndex = 0;
-
-      chapters.forEach((chapter, index) => {
-        const sectionTop = chapter.offsetTop - 150;
-        if (scrollY >= sectionTop) {
-          current = chapter.getAttribute('id');
-          currentIndex = index + 1;
-        }
-      });
-
-      tocLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
-      });
-
-      if (currentIndex > 0) {
-        chapterIndicator.textContent = currentIndex + ' / ' + chapters.length;
-      }
     }
-
-    window.addEventListener('scroll', updateActiveChapter);
-
-    // 챕터 네비게이션
-    const prevBtn = document.getElementById('prevChapter');
-    const nextBtn = document.getElementById('nextChapter');
-
-    function getCurrentChapterIndex() {
-      let current = 0;
-      chapters.forEach((chapter, index) => {
-        const sectionTop = chapter.offsetTop - 150;
-        if (scrollY >= sectionTop) {
-          current = index;
-        }
-      });
-      return current;
-    }
-
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentIndex = getCurrentChapterIndex();
-      if (currentIndex > 0) {
-        chapters[currentIndex - 1].scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentIndex = getCurrentChapterIndex();
-      if (currentIndex < chapters.length - 1) {
-        chapters[currentIndex + 1].scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-
-    // 부드러운 스크롤
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
   </script>
 </body>
 </html>

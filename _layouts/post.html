@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="post-header-inner">
+      <a href="{{ '/' | relative_url }}" class="post-back">← 목록으로</a>
+      <span class="post-category-badge">{{ page.category | default: '번역' }}</span>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <span>📅 {{ page.date | date: "%Y년 %m월 %d일" }}</span>
+        <span>✍️ 원저자: {{ page.author | default: 'Unknown' }}</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-content">
+    {% if page.original_url %}
+    <div class="source-box">
+      <span>🔗</span>
+      <span>원문: <a href="{{ page.original_url }}" target="_blank">{{ page.original_url | truncate: 60 }}</a></span>
+    </div>
+    {% endif %}
+
+    <div class="content-body">
+      {{ content }}
+    </div>
+
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      <span class="tags-label">태그</span>
+      <div class="tags-list">
+        {% for tag in page.tags %}
+        <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</article>

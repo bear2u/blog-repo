@@ -1,12 +1,26 @@
-title: Claude Code 2.0 가이드
-description: 코딩 에이전트 활용법 - 한국어 번역
-baseurl: ""
-url: ""
+title: Tech Blog
+description: AI & 개발 관련 번역 블로그
+author: Bear
+baseurl: "/blog-repo"
+url: "https://bear2u.github.io"
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+permalink: /:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 plugins:
   - jekyll-seo-tag
@@ -16,3 +30,4 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - claude-code-2.0-guide-korean.md
