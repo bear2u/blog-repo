@@ -146,6 +146,7 @@ def prepare_tokenizer_data(datasets: list, output_path: str):
 
 ### tokenizer_config.json
 
+{% raw %}
 ```json
 {
   "add_bos_token": false,
@@ -159,6 +160,7 @@ def prepare_tokenizer_data(datasets: list, output_path: str):
   "tokenizer_class": "PreTrainedTokenizerFast"
 }
 ```
+{% endraw %}
 
 ---
 

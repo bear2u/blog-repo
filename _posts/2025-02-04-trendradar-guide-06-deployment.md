@@ -49,6 +49,7 @@ TrendRadar는 다양한 배포 방식을 지원합니다.
 
 ### 워크플로우 파일
 
+{% raw %}
 ```yaml
 # .github/workflows/news.yml
 
@@ -89,6 +90,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Update news"
           git push
 ```
+{% endraw %}
 
 ### 커스텀 스케줄
 
@@ -270,6 +272,7 @@ report:
 
 ### 워크플로우
 
+{% raw %}
 ```yaml
 # .github/workflows/pages.yml
 
@@ -297,6 +300,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
 ```
+{% endraw %}
 
 ---
 

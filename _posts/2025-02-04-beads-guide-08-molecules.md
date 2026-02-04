@@ -37,6 +37,7 @@ excerpt: "Beads의 템플릿 워크플로우 시스템인 Molecules와 Wisps를 
 
 ### YAML 템플릿
 
+{% raw %}
 ```yaml
 # .beads/molecules/feature-dev.yaml
 
@@ -94,6 +95,7 @@ steps:
     blocks:
       - test
 ```
+{% endraw %}
 
 ---
 
@@ -249,6 +251,7 @@ func (m *Molecule) Render(vars map[string]string) ([]*types.Issue, error) {
     return issues, nil
 }
 
+{% raw %}
 func renderTemplate(tmpl string, vars map[string]string) string {
     result := tmpl
     for k, v := range vars {
@@ -256,6 +259,7 @@ func renderTemplate(tmpl string, vars map[string]string) string {
     }
     return result
 }
+{% endraw %}
 ```
 
 ---
@@ -264,6 +268,7 @@ func renderTemplate(tmpl string, vars map[string]string) string {
 
 ### bug-fix
 
+{% raw %}
 ```yaml
 # .beads/molecules/bug-fix.yaml
 
@@ -296,9 +301,11 @@ steps:
     blocks:
       - fix
 ```
+{% endraw %}
 
 ### code-review
 
+{% raw %}
 ```yaml
 # .beads/molecules/code-review.yaml
 
@@ -332,6 +339,7 @@ steps:
     blocks:
       - feedback
 ```
+{% endraw %}
 
 ---
 

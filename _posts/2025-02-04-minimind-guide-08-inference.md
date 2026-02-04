@@ -269,6 +269,7 @@ for output in outputs:
 
 ## Ollama 통합
 
+{% raw %}
 ```bash
 # Modelfile 생성
 cat > Modelfile << EOF
@@ -287,6 +288,7 @@ ollama create minimind -f Modelfile
 # 실행
 ollama run minimind "안녕하세요"
 ```
+{% endraw %}
 
 ---
 

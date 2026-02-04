@@ -278,6 +278,7 @@ bd gh link bd-a1b2 --pr 456
 
 ### GitHub Actions
 
+{% raw %}
 ```yaml
 # .github/workflows/beads-sync.yml
 
@@ -305,6 +306,7 @@ jobs:
         run: |
           bd gh sync --repo ${{ github.repository }}
 ```
+{% endraw %}
 
 ---
 
