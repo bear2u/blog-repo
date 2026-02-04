@@ -620,3 +620,258 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
+
+/* ===== Dropdown Menu ===== */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.65rem;
+  transition: transform 0.2s;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  min-width: 220px;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 200;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--bg-secondary);
+  color: var(--accent);
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0.5rem 0;
+}
+
+/* ===== Guide Page ===== */
+.guide-header {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.guide-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.guide-desc {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.guide-author {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.guide-author a {
+  color: white;
+  text-decoration: underline;
+}
+
+.guide-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.guide-intro {
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.guide-toc h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.toc-section {
+  margin-bottom: 2rem;
+}
+
+.toc-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--accent);
+}
+
+.toc-list {
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.toc-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.toc-item:last-child {
+  border-bottom: none;
+}
+
+.toc-item a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.toc-item a:hover {
+  background: var(--bg-secondary);
+}
+
+.toc-part {
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 2rem;
+}
+
+.toc-title {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Quick Links */
+.guide-quick-links {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.guide-quick-links h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.quick-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.quick-link-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0,102,204,0.1);
+  transform: translateY(-2px);
+}
+
+.quick-link-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.quick-link-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.quick-link-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Mobile Dropdown */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: var(--bg-secondary);
+    display: none;
+    padding: 0;
+  }
+
+  .nav-dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .guide-title {
+    font-size: 1.8rem;
+  }
+
+  .guide-desc {
+    font-size: 1rem;
+  }
+
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}

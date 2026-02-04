@@ -13,7 +13,27 @@
 
     <ul class="nav-menu" id="navMenu">
       <li><a href="{{ '/' | relative_url }}" class="nav-link">홈</a></li>
-      <li><a href="{{ '/#posts' | relative_url }}" class="nav-link">포스트</a></li>
+      <li class="nav-dropdown">
+        <a href="{{ '/claude-code-2-guide/' | relative_url }}" class="nav-link nav-dropdown-toggle">
+          Claude Code 2.0 <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ '/claude-code-2-guide/' | relative_url }}">전체 목차</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a href="{{ '/claude-code-2-guide-01-intro/' | relative_url }}">1. 소개</a></li>
+          <li><a href="{{ '/claude-code-2-guide-02-lore/' | relative_url }}">2. 러브 스토리</a></li>
+          <li><a href="{{ '/claude-code-2-guide-03-opus45/' | relative_url }}">3. Opus 4.5</a></li>
+          <li><a href="{{ '/claude-code-2-guide-04-concepts/' | relative_url }}">4. 핵심 개념</a></li>
+          <li><a href="{{ '/claude-code-2-guide-05-evolution/' | relative_url }}">5. QoL 개선</a></li>
+          <li><a href="{{ '/claude-code-2-guide-06-commands/' | relative_url }}">6. 명령어</a></li>
+          <li><a href="{{ '/claude-code-2-guide-07-subagents/' | relative_url }}">7. 서브 에이전트</a></li>
+          <li><a href="{{ '/claude-code-2-guide-08-workflow/' | relative_url }}">8. 워크플로우</a></li>
+          <li><a href="{{ '/claude-code-2-guide-09-context-engineering/' | relative_url }}">9. 컨텍스트 엔지니어링</a></li>
+          <li><a href="{{ '/claude-code-2-guide-10-mcp-reminders/' | relative_url }}">10. MCP & 리마인더</a></li>
+          <li><a href="{{ '/claude-code-2-guide-11-skills-hooks/' | relative_url }}">11. 스킬 & 훅</a></li>
+          <li><a href="{{ '/claude-code-2-guide-12-conclusion/' | relative_url }}">12. 결론</a></li>
+        </ul>
+      </li>
       <li><a href="https://github.com/bear2u" target="_blank" class="nav-link">GitHub</a></li>
     </ul>
   </div>
