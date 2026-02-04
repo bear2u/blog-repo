@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (12) - 결론 및 참고 자료"
 date: 2025-12-28
+permalink: /claude-code-2-guide-12-conclusion/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 결론, 미래 전망, 참고 자료]

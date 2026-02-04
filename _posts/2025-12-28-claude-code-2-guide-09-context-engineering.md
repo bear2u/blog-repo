@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (9) - 컨텍스트 엔지니어링 이해하기"
 date: 2025-12-28
+permalink: /claude-code-2-guide-09-context-engineering/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 컨텍스트 엔지니어링, 토큰, 컨텍스트 윈도우]

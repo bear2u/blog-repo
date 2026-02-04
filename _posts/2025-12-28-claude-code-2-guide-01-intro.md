@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (1) - 소개 및 작성 배경"
 date: 2025-12-28
+permalink: /claude-code-2-guide-01-intro/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 코딩 에이전트, Anthropic, Opus 4.5]

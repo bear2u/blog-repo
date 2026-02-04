@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (7) - 서브 에이전트 완전 정복"
 date: 2025-12-28
+permalink: /claude-code-2-guide-07-subagents/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 서브 에이전트, Task 도구, Explore, 병렬 처리]

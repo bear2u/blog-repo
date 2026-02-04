@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (11) - 스킬, 플러그인, 훅"
 date: 2025-12-28
+permalink: /claude-code-2-guide-11-skills-hooks/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 스킬, 플러그인, 훅, 자동화]

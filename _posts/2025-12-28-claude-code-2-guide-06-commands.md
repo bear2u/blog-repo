@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (6) - 명령어와 커스텀 명령어"
 date: 2025-12-28
+permalink: /claude-code-2-guide-06-commands/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 명령어, 커스텀 명령어, 워크플로우]

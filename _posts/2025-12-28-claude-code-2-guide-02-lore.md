@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (2) - Anthropic과의 러브 스토리"
 date: 2025-12-28
+permalink: /claude-code-2-guide-02-lore/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 코딩 에이전트, Anthropic, OpenAI, Codex]

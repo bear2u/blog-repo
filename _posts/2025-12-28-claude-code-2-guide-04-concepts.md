@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (4) - 비기술자를 위한 핵심 개념"
 date: 2025-12-28
+permalink: /claude-code-2-guide-04-concepts/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, LLM, 컨텍스트, 에이전트, 도구 호출]

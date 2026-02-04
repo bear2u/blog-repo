@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Code 2.0 가이드 (8) - 나의 워크플로우"
 date: 2025-12-28
+permalink: /claude-code-2-guide-08-workflow/
 author: Sankalp
 category: AI
 tags: [Claude Code, AI, 워크플로우, 개발 프로세스, 코드 리뷰]
