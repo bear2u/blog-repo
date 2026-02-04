@@ -21,64 +21,84 @@ permalink: /ui-tars-guide/
     <div class="toc-section">
       <h3>Part 1: 개요</h3>
       <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'ui-tars-guide' and post.part >= 1 and post.part <= 2 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "UI-TARS 완벽 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-01-intro/' | relative_url }}">
+            <span class="toc-part">1.</span>
+            <span class="toc-title">소개 및 개요</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-02-architecture/' | relative_url }}">
+            <span class="toc-part">2.</span>
+            <span class="toc-title">전체 아키텍처</span>
+          </a>
+        </li>
       </ul>
     </div>
 
     <div class="toc-section">
       <h3>Part 2: 애플리케이션</h3>
       <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'ui-tars-guide' and post.part >= 3 and post.part <= 4 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "UI-TARS 완벽 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-03-desktop-app/' | relative_url }}">
+            <span class="toc-part">3.</span>
+            <span class="toc-title">Desktop 앱 분석</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-04-agent-tars/' | relative_url }}">
+            <span class="toc-part">4.</span>
+            <span class="toc-title">Agent TARS Core</span>
+          </a>
+        </li>
       </ul>
     </div>
 
     <div class="toc-section">
       <h3>Part 3: 핵심 모듈</h3>
       <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'ui-tars-guide' and post.part >= 5 and post.part <= 7 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "UI-TARS 완벽 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-05-gui-agent/' | relative_url }}">
+            <span class="toc-part">5.</span>
+            <span class="toc-title">GUI Agent SDK</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-06-operators/' | relative_url }}">
+            <span class="toc-part">6.</span>
+            <span class="toc-title">Operators</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-07-tarko/' | relative_url }}">
+            <span class="toc-part">7.</span>
+            <span class="toc-title">Tarko 프레임워크</span>
+          </a>
+        </li>
       </ul>
     </div>
 
     <div class="toc-section">
       <h3>Part 4: 인프라 & 활용</h3>
       <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'ui-tars-guide' and post.part >= 8 and post.part <= 10 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "UI-TARS 완벽 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-08-mcp/' | relative_url }}">
+            <span class="toc-part">8.</span>
+            <span class="toc-title">MCP 인프라</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-09-context/' | relative_url }}">
+            <span class="toc-part">9.</span>
+            <span class="toc-title">Context Engineering</span>
+          </a>
+        </li>
+        <li class="toc-item">
+          <a href="{{ '/ui-tars-guide-10-conclusion/' | relative_url }}">
+            <span class="toc-part">10.</span>
+            <span class="toc-title">활용 가이드 및 결론</span>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
