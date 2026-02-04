@@ -37,5 +37,56 @@ layout: default
       </div>
     </div>
     {% endif %}
+
+    {% if page.series %}
+    <nav class="series-nav">
+      <div class="series-nav-header">
+        <span class="series-label">📚 {{ page.series }} 시리즈</span>
+        <a href="{{ '/claude-code-2-guide/' | relative_url }}" class="series-toc-link">전체 목차 →</a>
+      </div>
+      <div class="series-nav-buttons">
+        {% assign prev_part = page.part | minus: 1 %}
+        {% assign next_part = page.part | plus: 1 %}
+
+        {% assign prev_post = nil %}
+        {% assign next_post = nil %}
+
+        {% for post in site.posts %}
+          {% if post.series == page.series %}
+            {% if post.part == prev_part %}
+              {% assign prev_post = post %}
+            {% endif %}
+            {% if post.part == next_part %}
+              {% assign next_post = post %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if prev_post %}
+        <a href="{{ prev_post.url | relative_url }}" class="series-nav-btn series-nav-prev">
+          <span class="nav-direction">← 이전</span>
+          <span class="nav-title">{{ prev_post.part }}. {{ prev_post.title | split: " - " | last }}</span>
+        </a>
+        {% else %}
+        <div class="series-nav-btn series-nav-prev disabled">
+          <span class="nav-direction">← 이전</span>
+          <span class="nav-title">첫 번째 글입니다</span>
+        </div>
+        {% endif %}
+
+        {% if next_post %}
+        <a href="{{ next_post.url | relative_url }}" class="series-nav-btn series-nav-next">
+          <span class="nav-direction">다음 →</span>
+          <span class="nav-title">{{ next_post.part }}. {{ next_post.title | split: " - " | last }}</span>
+        </a>
+        {% else %}
+        <div class="series-nav-btn series-nav-next disabled">
+          <span class="nav-direction">다음 →</span>
+          <span class="nav-title">마지막 글입니다</span>
+        </div>
+        {% endif %}
+      </div>
+    </nav>
+    {% endif %}
   </div>
 </article>
