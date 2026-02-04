@@ -1,35 +1,12 @@
 ---
 layout: default
-title: Claude Code 2.0 가이드 및 코딩 에이전트 활용법
+title: 클로드 코드 2.0 가이드
 ---
 
-> **원문:** [A Guide to Claude Code 2.0 and getting better at using coding agents](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)
-> **저자:** Sankalp
-> **작성일:** 2025년 12월 27일
-> **번역:** Claude
+# 클로드 코드 2.0 가이드
 
----
-
-## 목차
-
-1. [서론 및 배경](#1장-서론-및-배경)
-2. [저자의 여정](#2장-저자의-여정)
-3. [비기술 사용자를 위한 기술 설명](#3장-비기술-사용자를-위한-기술-설명)
-4. [Claude Code 2.0의 삶의 질 개선 기능](#4장-claude-code-20의-삶의-질-개선-기능)
-5. [명령어 및 커스터마이징](#5장-명령어-및-커스터마이징)
-6. [서브 에이전트](#6장-서브-에이전트-sub-agents)
-7. [Task 도구](#7장-task-도구)
-8. [컨텍스트 엔지니어링 심층 분석](#8장-컨텍스트-엔지니어링-심층-분석)
-9. [스킬 및 플러그인](#9장-스킬-및-플러그인)
-10. [훅](#10장-훅-hooks)
-11. [MCP 서버 및 코드 실행](#11장-mcp-서버-및-코드-실행)
-12. [저자의 개인 워크플로우](#12장-저자의-개인-워크플로우)
-13. [Opus 4.5가 뛰어난 이유](#13장-opus-45가-뛰어난-이유)
-14. [시스템 리마인더](#14장-시스템-리마인더)
-15. [컨텍스트 관리 전략](#15장-컨텍스트-관리-전략)
-16. [다른 도구와의 비교](#16장-다른-도구와의-비교)
-17. [커뮤니티 리소스](#17장-커뮤니티-리소스)
-18. [핵심 요약](#18장-핵심-요약)
+> **원문:** [A Guide to Claude Code 2.0](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/) by Sankalp
+> **작성일:** 2025년 12월 27일 | **번역:** Claude
 
 ---
 
