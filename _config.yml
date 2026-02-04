@@ -1,0 +1,18 @@
+title: Claude Code 2.0 가이드
+description: 코딩 에이전트 활용법 - 한국어 번역
+baseurl: ""
+url: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
