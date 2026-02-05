@@ -27,6 +27,7 @@ icon: fas fa-gamepad
 | 08 | [이동 & 경로](/blog-repo/rs-sdk-guide-08-navigation/) | 내비게이션 |
 | 09 | [베스트 프랙티스](/blog-repo/rs-sdk-guide-09-best-practices/) | 개발 팁 |
 | 10 | [서버 호스팅](/blog-repo/rs-sdk-guide-10-hosting/) | 배포 가이드 |
+| 11 | [MCP 연동 심화](/blog-repo/rs-sdk-guide-11-mcp-integration/) | Claude AI로 봇 제어 |
 
 ---
 
