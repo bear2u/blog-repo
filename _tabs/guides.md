@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Guides
+permalink: /guides/
 icon: fas fa-book
 order: 1
 ---
