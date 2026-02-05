@@ -14,28 +14,63 @@ permalink: /ralph-guide-03-files/
 
 ```
 .ralph/
-├── PROMPT.md           # 프로젝트 비전과 지침
-├── fix_plan.md         # 작업 체크리스트
-├── AGENT.md            # 빌드/테스트 명령어
-├── specs/              # 상세 스펙 문서
-│   └── stdlib/         # 표준 패턴 문서
-├── logs/               # 실행 로그
-│   ├── session_001.log
-│   └── session_002.log
-└── status.json         # 런타임 상태
+├── PROMPT.md      # 프로젝트 비전
+├── fix_plan.md    # 작업 목록
+├── AGENT.md       # 빌드 명령어
+├── specs/         # 상세 스펙
+├── logs/          # 실행 로그
+└── status.json    # 런타임 상태
 ```
 
-## 파일 참조 테이블
+## 핵심 파일 요약
 
-| 파일 | 자동 생성? | 작성자 | 읽는 주체 | 권장 행동 |
-|------|-----------|--------|-----------|-----------|
-| `PROMPT.md` | 기본 템플릿 | **사용자** | Ralph | 프로젝트 목표 정의 |
-| `fix_plan.md` | 기본 템플릿 | **사용자** + Ralph | Ralph | 작업 추가/수정 |
-| `AGENT.md` | 빌드 명령 감지 | Ralph | Ralph | 거의 편집 불필요 |
-| `specs/` | 빈 디렉토리 | **사용자** | Ralph | 필요시 상세 스펙 추가 |
-| `.ralphrc` | 프로젝트 인식 | 보통 그대로 | Ralph | 거의 편집 불필요 |
-| `logs/` | 자동 생성 | Ralph | 사용자 | 읽기 전용 |
-| `status.json` | 런타임 생성 | Ralph | 모니터링 툴 | 읽기 전용 |
+<div class="file-cards">
+
+<div class="file-card">
+<h4>📄 PROMPT.md</h4>
+<p><strong>작성자:</strong> 사용자</p>
+<p><strong>용도:</strong> 프로젝트 목표 정의</p>
+<p>✏️ 직접 편집 필요</p>
+</div>
+
+<div class="file-card">
+<h4>📋 fix_plan.md</h4>
+<p><strong>작성자:</strong> 사용자 + Ralph</p>
+<p><strong>용도:</strong> 작업 체크리스트</p>
+<p>✏️ 작업 추가/수정</p>
+</div>
+
+<div class="file-card">
+<h4>🔧 AGENT.md</h4>
+<p><strong>작성자:</strong> Ralph (자동)</p>
+<p><strong>용도:</strong> 빌드/테스트 명령</p>
+<p>🔒 거의 편집 불필요</p>
+</div>
+
+<div class="file-card">
+<h4>📁 specs/</h4>
+<p><strong>작성자:</strong> 사용자</p>
+<p><strong>용도:</strong> 상세 요구사항</p>
+<p>✏️ 필요시 추가</p>
+</div>
+
+<div class="file-card">
+<h4>⚙️ .ralphrc</h4>
+<p><strong>작성자:</strong> 자동 생성</p>
+<p><strong>용도:</strong> 프로젝트 설정</p>
+<p>🔒 거의 편집 불필요</p>
+</div>
+
+<div class="file-card">
+<h4>📊 logs/ & status.json</h4>
+<p><strong>작성자:</strong> Ralph (자동)</p>
+<p><strong>용도:</strong> 로그 및 상태</p>
+<p>👁️ 읽기 전용</p>
+</div>
+
+</div>
+
+---
 
 ## PROMPT.md - 프로젝트 비전
 
@@ -49,12 +84,11 @@ permalink: /ralph-guide-03-files/
 # Ralph Development Instructions
 
 ## Context
-You are Ralph, an autonomous AI agent building [프로젝트 설명].
+You are Ralph, building [프로젝트].
 
 ## Current Objectives
 1. [목표 1]
 2. [목표 2]
-3. [목표 3]
 
 ## Key Principles
 - [원칙 1]
@@ -63,40 +97,35 @@ You are Ralph, an autonomous AI agent building [프로젝트 설명].
 ## Technology Stack
 - Language: TypeScript
 - Framework: Express
-- Database: PostgreSQL
 - Testing: Jest
-
-## Quality Standards
-- All code must have tests
-- Follow ESLint rules
-- Document public APIs
 ```
 
-### 포함하지 말아야 할 내용
+### 포함하지 말 것
 
-| 포함하지 말 것 | 대신 사용할 곳 |
-|---------------|---------------|
-| 단계별 구현 작업 | `fix_plan.md` |
-| 상세 API 스펙 | `specs/` |
-| 빌드 명령어 | `AGENT.md` |
+| 내용 | 대신 사용할 곳 |
+|------|---------------|
+| 단계별 작업 | `fix_plan.md` |
+| API 스펙 | `specs/` |
+| 빌드 명령 | `AGENT.md` |
 
 ### 좋은 예시
 
 ```markdown
 ## Context
-You are Ralph, building a REST API for a bookstore inventory system.
+You are Ralph, building a REST API
+for a bookstore inventory.
 
 ## Key Principles
-- Use FastAPI with async database operations
+- Use FastAPI with async operations
 - Follow REST conventions strictly
 - Every endpoint needs tests
-- Document all API endpoints with OpenAPI
 
 ## Constraints
-- Must support PostgreSQL and SQLite
-- Response time under 200ms for list operations
-- Maximum 1000 records per page
+- Support PostgreSQL and SQLite
+- Response time under 200ms
 ```
+
+---
 
 ## fix_plan.md - 작업 체크리스트
 
@@ -107,79 +136,67 @@ Ralph가 수행할 구체적인 작업 목록입니다. Ralph는 체크되지 �
 ### 형식
 
 ```markdown
-# Fix Plan - [프로젝트명]
+# Fix Plan
 
-## Priority 1: [카테고리]
+## Priority 1: 기초
 - [ ] 구체적인 작업 1
 - [ ] 구체적인 작업 2
 - [x] 완료된 작업
 
-## Priority 2: [카테고리]
+## Priority 2: 기능
 - [ ] 작업 3
 - [ ] 작업 4
 ```
 
 ### 좋은 작업 vs 나쁜 작업
 
-**좋은 작업 (구체적):**
+**✅ 좋은 작업 (구체적):**
 ```markdown
-- [ ] Create POST /books endpoint that accepts {title, author, isbn}
-- [ ] Add pagination to GET /books (limit, offset params)
-- [ ] Write test for duplicate ISBN validation
+- [ ] Create POST /books endpoint
+- [ ] Add pagination to GET /books
+- [ ] Write test for ISBN validation
 ```
 
-**나쁜 작업 (모호함):**
+**❌ 나쁜 작업 (모호함):**
 ```markdown
 - [ ] Make the API work
 - [ ] Add features
 - [ ] Fix bugs
 ```
 
-### Ralph의 작업 처리
+### Ralph의 작업 흐름
 
-```
-fix_plan.md 읽기
-    │
-    ▼
-[ ] 체크되지 않은 작업 찾기
-    │
-    ▼
-작업 구현
-    │
-    ▼
-테스트 실행
-    │
-    ▼
-[x] 작업 완료 체크
-    │
-    ▼
-(새 작업 발견 시 추가)
-```
+1. **읽기** → fix_plan.md에서 `[ ]` 찾기
+2. **구현** → 해당 작업 수행
+3. **테스트** → 테스트 실행
+4. **완료** → `[x]`로 체크
+5. **반복** → 다음 작업으로
+
+---
 
 ## specs/ - 상세 스펙
 
 ### 언제 사용하는가?
 
-- PROMPT.md로 설명하기에 너무 상세한 요구사항
-- 정확히 따라야 하는 API 계약
-- 특정 유효성 검사 규칙이 있는 데이터 모델
+- PROMPT.md로 설명하기에 너무 상세할 때
+- 정확한 API 계약이 필요할 때
+- 특정 유효성 검사 규칙이 있을 때
 - 외부 시스템 통합 요구사항
 
 ### 구조 예시
 
 ```
 specs/
-├── api-contracts.md      # API 엔드포인트 정의
-├── data-models.md        # 엔티티 관계와 유효성 검사
-├── third-party-auth.md   # OAuth 통합 요구사항
+├── api-contracts.md
+├── data-models.md
 └── stdlib/
-    ├── error-handling.md # 에러 처리 패턴
-    └── logging.md        # 로깅 규칙
+    ├── error-handling.md
+    └── logging.md
 ```
 
 ### specs/stdlib/ - 표준 패턴
 
-프로젝트 전체에서 일관되게 사용할 패턴을 정의합니다.
+프로젝트 전체에서 일관되게 사용할 패턴:
 
 ```markdown
 # Error Handling Standard
@@ -188,17 +205,18 @@ All API errors must return:
 {
   "error": {
     "code": "BOOK_NOT_FOUND",
-    "message": "No book with ID 123 exists",
-    "details": {}
+    "message": "No book exists"
   }
 }
 
-Use HTTPException with these codes:
+HTTP Status Codes:
 - 400: Validation errors
-- 404: Resource not found
-- 409: Conflict (duplicate)
-- 500: Internal errors (log full trace)
+- 404: Not found
+- 409: Conflict
+- 500: Internal errors
 ```
+
+---
 
 ## AGENT.md - 빌드 지침
 
@@ -220,18 +238,19 @@ Use HTTPException with these codes:
 ## Project Structure
 - Source: src/
 - Tests: tests/
-- Config: package.json
 
 ## Environment
-- Node.js version: 18
+- Node.js: 18
 - Package manager: npm
 ```
 
 ### 편집이 필요한 경우
 
-- 복잡한 환경 설정이 필요한 경우
-- 특수한 빌드 단계가 있는 경우
+- 복잡한 환경 설정
+- 특수한 빌드 단계
 - 배포 명령어 문서화
+
+---
 
 ## .ralphrc - 프로젝트 설정
 
@@ -246,81 +265,150 @@ PROJECT_TYPE="typescript"
 MAX_CALLS_PER_HOUR=100
 
 # 허용된 도구
-ALLOWED_TOOLS="Write,Read,Edit,Bash(git *),Bash(npm *),Bash(pytest)"
+ALLOWED_TOOLS="Write,Read,Edit"
 
 # 타임아웃
 SESSION_TIMEOUT=3600
 LOOP_TIMEOUT=300
 ```
 
-### 설정 옵션
+### 주요 설정 옵션
 
-| 옵션 | 기본값 | 설명 |
-|------|--------|------|
-| `MAX_CALLS_PER_HOUR` | 100 | 시간당 최대 API 호출 |
-| `SESSION_TIMEOUT` | 3600 | 세션 타임아웃 (초) |
-| `LOOP_TIMEOUT` | 300 | 단일 루프 타임아웃 (초) |
-| `ALLOWED_TOOLS` | 기본 도구 | 허용된 Claude 도구 |
+| 옵션 | 기본값 |
+|------|--------|
+| `MAX_CALLS_PER_HOUR` | 100 |
+| `SESSION_TIMEOUT` | 3600초 |
+| `LOOP_TIMEOUT` | 300초 |
+
+---
 
 ## 파일 관계도
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                         PROMPT.md                           │
-│            (High-level goals and principles)                │
-│                              │                              │
-│                              ▼                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │                      specs/                          │   │
-│  │         (Detailed requirements when needed)          │   │
-│  │                                                      │   │
-│  │  specs/api.md ──────▶ Informs fix_plan.md tasks     │   │
-│  │  specs/stdlib/ ─────▶ Conventions Ralph follows     │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                              │                              │
-│                              ▼                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │                    fix_plan.md                       │   │
-│  │          (Concrete tasks Ralph executes)             │   │
-│  │                                                      │   │
-│  │  [ ] Task 1 ◄────── Ralph checks off when done      │   │
-│  │  [x] Task 2                                         │   │
-│  │  [ ] Task 3 ◄────── Ralph adds discovered tasks     │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                              │                              │
-│                              ▼                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │                     AGENT.md                         │   │
-│  │        (How to build/test - auto-maintained)         │   │
-│  └─────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-```
+<div class="flow-diagram">
+<div class="flow-item flow-top">
+<strong>PROMPT.md</strong>
+<span>프로젝트 목표와 원칙</span>
+</div>
+<div class="flow-arrow">↓</div>
+<div class="flow-item">
+<strong>specs/</strong>
+<span>상세 요구사항 (필요시)</span>
+</div>
+<div class="flow-arrow">↓</div>
+<div class="flow-item">
+<strong>fix_plan.md</strong>
+<span>구체적인 작업 목록</span>
+</div>
+<div class="flow-arrow">↓</div>
+<div class="flow-item flow-bottom">
+<strong>AGENT.md</strong>
+<span>빌드/테스트 방법</span>
+</div>
+</div>
+
+---
 
 ## 일반적인 시나리오
 
 ### 시나리오 1: 간단한 기능 추가
 
 fix_plan.md만 편집:
+
 ```markdown
-- [ ] Add a /health endpoint that returns {"status": "ok"}
+- [ ] Add /health endpoint
 ```
 
 ### 시나리오 2: 복잡한 기능
 
-1. specs/ 파일 먼저 생성:
+**Step 1:** specs/ 파일 먼저 생성
+
 ```markdown
 # specs/search-feature.md
+
 ## Requirements
-- Full-text search on book titles
-- Must support exact phrase matching
-- Must support fuzzy matching
+- Full-text search on titles
+- Support exact phrase matching
+- Support fuzzy matching
 ```
 
-2. fix_plan.md에 참조 추가:
+**Step 2:** fix_plan.md에 참조 추가
+
 ```markdown
-- [ ] Implement search per specs/search-feature.md
+- [ ] Implement search per
+      specs/search-feature.md
 ```
 
 ---
 
 **이전 장:** [설치 및 시작](/ralph-guide-02-installation/) | **다음 장:** [핵심 개념](/ralph-guide-04-concepts/)
+
+<style>
+.file-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.file-card {
+  background: var(--card-bg, #f8f9fa);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.file-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.file-card p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--text-muted, #666);
+}
+
+.flow-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.flow-item {
+  background: var(--card-bg, #f0f7ff);
+  border: 2px solid #059669;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+}
+
+.flow-item strong {
+  display: block;
+  color: #059669;
+}
+
+.flow-item span {
+  font-size: 0.85rem;
+  color: var(--text-muted, #666);
+}
+
+.flow-arrow {
+  font-size: 1.5rem;
+  color: #059669;
+}
+
+@media (prefers-color-scheme: dark) {
+  .file-card {
+    --card-bg: #1e1e2e;
+    --border-color: #333;
+  }
+  .flow-item {
+    --card-bg: #1a2e1a;
+  }
+}
+</style>
