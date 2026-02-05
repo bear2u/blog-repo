@@ -4,7 +4,7 @@ title: "TrendRadar 완벽 가이드 (5) - AI 분석 & MCP"
 date: 2025-02-04
 permalink: /trendradar-guide-05-ai-mcp/
 author: sansan0
-categories: [AI]
+categories: [개발 도구, TrendRadar]
 tags: [TrendRadar, AI, MCP, OpenAI, Claude, LLM]
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "TrendRadar의 AI 분석 기능과 MCP 서버 통합을 분석합니다."

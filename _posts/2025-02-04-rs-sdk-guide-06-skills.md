@@ -2,7 +2,7 @@
 layout: post
 title: "RS-SDK 가이드 - 스킬 자동화"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, RS-SDK]
 tags: [rs-sdk, skills, woodcutting, mining, fishing, combat]
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk

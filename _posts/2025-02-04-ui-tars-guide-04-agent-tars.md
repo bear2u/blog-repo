@@ -4,7 +4,7 @@ title: "UI-TARS 완벽 가이드 (4) - Agent TARS Core"
 date: 2025-02-04
 permalink: /ui-tars-guide-04-agent-tars/
 author: ByteDance
-categories: [AI]
+categories: [AI 에이전트, UI-TARS]
 tags: [UI-TARS, Agent TARS, CLI, MCP, Event Stream]
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "Agent TARS의 CLI와 핵심 에이전트 로직을 분석합니다. 이벤트 스트림 기반 아키텍처와 MCP 통합을 살펴봅니다."

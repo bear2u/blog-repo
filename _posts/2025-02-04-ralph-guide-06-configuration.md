@@ -2,7 +2,7 @@
 layout: post
 title: "Ralph 가이드 06 - 구성 및 설정"
 date: 2025-02-04
-categories: [AI, Claude Code, Ralph]
+categories: [AI 코딩 에이전트, Ralph]
 tags: [ralph, configuration, settings, rate-limit]
 permalink: /ralph-guide-06-configuration/
 ---

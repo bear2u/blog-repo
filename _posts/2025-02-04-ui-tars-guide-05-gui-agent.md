@@ -4,7 +4,7 @@ title: "UI-TARS 완벽 가이드 (5) - GUI Agent SDK"
 date: 2025-02-04
 permalink: /ui-tars-guide-05-gui-agent/
 author: ByteDance
-categories: [AI]
+categories: [AI 에이전트, UI-TARS]
 tags: [UI-TARS, GUI Agent, Action Parser, SDK, Vision Model]
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "GUI Agent SDK의 액션 파서와 에이전트 SDK 구조를 분석합니다. LLM 출력을 구조화된 액션으로 변환하는 과정을 살펴봅니다."

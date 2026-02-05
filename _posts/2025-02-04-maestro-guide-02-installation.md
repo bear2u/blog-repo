@@ -2,7 +2,7 @@
 layout: post
 title: "Maestro 가이드 - 설치 및 설정"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, Maestro]
 tags: [maestro, installation, setup, android, ios]
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro

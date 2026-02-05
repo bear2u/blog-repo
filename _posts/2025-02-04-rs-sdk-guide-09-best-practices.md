@@ -2,7 +2,7 @@
 layout: post
 title: "RS-SDK 가이드 - 베스트 프랙티스"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, RS-SDK]
 tags: [rs-sdk, best-practices, error-handling, patterns, tips]
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk

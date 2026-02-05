@@ -4,7 +4,7 @@ title: "UI-TARS 완벽 가이드 (10) - 활용 가이드 및 결론"
 date: 2025-02-04
 permalink: /ui-tars-guide-10-conclusion/
 author: ByteDance
-categories: [AI]
+categories: [AI 에이전트, UI-TARS]
 tags: [UI-TARS, 활용 가이드, 확장, 커스터마이징, 결론]
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 실제 활용 방법과 확장 가이드를 소개합니다. 커스텀 Operator, MCP 서버 개발, 프롬프트 튜닝 방법을 알아봅니다."

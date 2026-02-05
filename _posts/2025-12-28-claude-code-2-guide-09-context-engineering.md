@@ -4,7 +4,7 @@ title: "Claude Code 2.0 가이드 (9) - 컨텍스트 엔지니어링 이해하�
 date: 2025-12-28
 permalink: /claude-code-2-guide-09-context-engineering/
 author: Sankalp
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, AI, 컨텍스트 엔지니어링, 토큰, 컨텍스트 윈도우]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "컨텍스트 엔지니어링이란 무엇인지, 왜 에이전트가 토큰 소비 기계인지, 그리고 컨텍스트 열화를 어떻게 관리하는지 알아봅니다."

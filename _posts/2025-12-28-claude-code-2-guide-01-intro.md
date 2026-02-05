@@ -4,7 +4,7 @@ title: "Claude Code 2.0 가이드 (1) - 소개 및 작성 배경"
 date: 2025-12-28
 permalink: /claude-code-2-guide-01-intro/
 author: Sankalp
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, AI, 코딩 에이전트, Anthropic, Opus 4.5]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Claude Code 2.0과 코딩 에이전트 활용법에 대한 가이드 시리즈의 첫 번째 글입니다. 왜 이 글을 썼는지, 그리고 이 가이드가 어떤 도움이 될 수 있는지 소개합니다."

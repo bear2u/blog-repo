@@ -4,7 +4,7 @@ title: "Beads 완벽 가이드 (6) - 동기화 메커니즘"
 date: 2025-02-04
 permalink: /beads-guide-06-sync/
 author: Steve Yegge
-categories: [AI]
+categories: [AI 에이전트, Beads]
 tags: [Beads, Sync, Import, Export, JSONL, Git]
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 SQLite-JSONL 양방향 동기화 메커니즘을 분석합니다."

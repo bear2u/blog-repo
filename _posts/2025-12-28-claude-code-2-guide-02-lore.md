@@ -4,7 +4,7 @@ title: "Claude Code 2.0 가이드 (2) - Anthropic과의 러브 스토리"
 date: 2025-12-28
 permalink: /claude-code-2-guide-02-lore/
 author: Sankalp
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, AI, 코딩 에이전트, Anthropic, OpenAI, Codex]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Opus 4.5 출시 이후 Claude Code 2.0과 함께 즐거운 시간을 보내고 있습니다. Claude에 대해 애정 어린 이야기를 하기 전에, 타임라인과 배경 이야기를 빠르게 살펴봅니다."

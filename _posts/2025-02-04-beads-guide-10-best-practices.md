@@ -4,7 +4,7 @@ title: "Beads 완벽 가이드 (10) - 활용 가이드 및 결론"
 date: 2025-02-04
 permalink: /beads-guide-10-best-practices/
 author: Steve Yegge
-categories: [AI]
+categories: [AI 에이전트, Beads]
 tags: [Beads, Best Practices, Workflow, AI Agent]
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads 활용 베스트 프랙티스와 AI 에이전트 워크플로우 가이드입니다."

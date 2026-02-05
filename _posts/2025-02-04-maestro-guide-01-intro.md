@@ -2,7 +2,7 @@
 layout: post
 title: "Maestro 가이드 - 소개"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, Maestro]
 tags: [maestro, mobile-testing, ui-automation, e2e-testing, yaml]
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro

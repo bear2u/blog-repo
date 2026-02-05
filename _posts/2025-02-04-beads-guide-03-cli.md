@@ -4,7 +4,7 @@ title: "Beads 완벽 가이드 (3) - CLI 명령어"
 date: 2025-02-04
 permalink: /beads-guide-03-cli/
 author: Steve Yegge
-categories: [AI]
+categories: [AI 에이전트, Beads]
 tags: [Beads, CLI, Commands, Cobra, Go]
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads CLI의 주요 명령어와 사용법을 상세히 알아봅니다."

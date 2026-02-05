@@ -4,7 +4,7 @@ title: "TrendRadar 완벽 가이드 (2) - 아키텍처"
 date: 2025-02-04
 permalink: /trendradar-guide-02-architecture/
 author: sansan0
-categories: [AI]
+categories: [개발 도구, TrendRadar]
 tags: [TrendRadar, Architecture, Python, Async]
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "TrendRadar의 모듈 구조와 데이터 흐름을 분석합니다."

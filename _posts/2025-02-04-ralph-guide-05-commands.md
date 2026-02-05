@@ -2,7 +2,7 @@
 layout: post
 title: "Ralph 가이드 05 - CLI 명령어"
 date: 2025-02-04
-categories: [AI, Claude Code, Ralph]
+categories: [AI 코딩 에이전트, Ralph]
 tags: [ralph, cli, commands, terminal]
 permalink: /ralph-guide-05-commands/
 ---

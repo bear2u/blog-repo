@@ -2,7 +2,7 @@
 layout: post
 title: "Ralph 가이드 07 - 서킷 브레이커"
 date: 2025-02-04
-categories: [AI, Claude Code, Ralph]
+categories: [AI 코딩 에이전트, Ralph]
 tags: [ralph, circuit-breaker, error-handling, safety]
 permalink: /ralph-guide-07-circuit-breaker/
 ---

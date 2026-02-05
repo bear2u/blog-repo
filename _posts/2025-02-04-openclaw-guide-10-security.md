@@ -4,7 +4,7 @@ title: "OpenClaw 완벽 가이드 (10) - 보안 & 배포"
 date: 2025-02-04
 permalink: /openclaw-guide-10-security/
 author: Peter Steinberger
-categories: [AI]
+categories: [AI 에이전트, OpenClaw]
 tags: [OpenClaw, Security, Docker, Sandboxing, Deployment, Tailscale]
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 보안 모델, 샌드박싱, Docker 배포, 원격 접근을 알아봅니다."

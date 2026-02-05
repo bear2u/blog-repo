@@ -4,7 +4,7 @@ title: "Beads 완벽 가이드 (5) - 데몬 시스템"
 date: 2025-02-04
 permalink: /beads-guide-05-daemon/
 author: Steve Yegge
-categories: [AI]
+categories: [AI 에이전트, Beads]
 tags: [Beads, Daemon, RPC, Background Process, Auto-Sync]
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 백그라운드 데몬 아키텍처와 RPC 통신을 분석합니다."

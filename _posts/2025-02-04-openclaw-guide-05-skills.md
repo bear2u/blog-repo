@@ -4,7 +4,7 @@ title: "OpenClaw 완벽 가이드 (5) - 스킬 시스템"
 date: 2025-02-04
 permalink: /openclaw-guide-05-skills/
 author: Peter Steinberger
-categories: [AI]
+categories: [AI 에이전트, OpenClaw]
 tags: [OpenClaw, Skills, ClawHub, SKILL.md, AgentSkills]
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 스킬 시스템과 커스텀 스킬 작성법을 상세히 알아봅니다."

@@ -4,7 +4,7 @@ title: "Claude Code 2.0 가이드 (12) - 결론 및 참고 자료"
 date: 2025-12-28
 permalink: /claude-code-2-guide-12-conclusion/
 author: Sankalp
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, AI, 결론, 미래 전망, 참고 자료]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Claude Code 2.0 가이드 시리즈의 마지막 글입니다. 핵심 교훈, 미래 전망, 그리고 참고 자료를 정리합니다."

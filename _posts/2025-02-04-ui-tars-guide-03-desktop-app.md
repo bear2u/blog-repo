@@ -4,7 +4,7 @@ title: "UI-TARS 완벽 가이드 (3) - Desktop 앱 분석"
 date: 2025-02-04
 permalink: /ui-tars-guide-03-desktop-app/
 author: ByteDance
-categories: [AI]
+categories: [AI 에이전트, UI-TARS]
 tags: [UI-TARS, Electron, Desktop App, IPC, React]
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS Desktop Electron 앱의 구조를 분석합니다. 메인/렌더러 프로세스, IPC 통신, 상태 관리를 살펴봅니다."

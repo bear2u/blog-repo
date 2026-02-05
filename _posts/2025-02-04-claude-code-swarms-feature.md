@@ -4,7 +4,7 @@ title: "Claude Code의 숨겨진 Swarms 기능: AI 기반 개발 팀의 미래"
 date: 2025-02-04
 permalink: /claude-code-swarms-feature/
 author: TechPlanet
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, Swarms, Multi-Agent, AI Development, Anthropic]
 original_url: "https://techplanet.today/post/claude-codes-hidden-swarms-feature-the-future-of-ai-powered-development-teams"
 excerpt: "Claude Code가 복잡한 프로그래밍 작업을 처리하기 위해 여러 전문화된 AI 에이전트를 생성하고 조율하는 정교한 'Swarms' 기능을 구현하고 있다는 사실이 발견되었습니다."

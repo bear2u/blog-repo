@@ -4,7 +4,7 @@ title: "TrendRadar 완벽 가이드 (1) - 소개 및 개요"
 date: 2025-02-04
 permalink: /trendradar-guide-01-intro/
 author: sansan0
-categories: [AI]
+categories: [개발 도구, TrendRadar]
 tags: [TrendRadar, News, Trend, RSS, MCP, AI]
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "30초 만에 배포 가능한 AI 기반 트렌드 모니터링 도구 TrendRadar를 소개합니다."

@@ -4,7 +4,7 @@ title: "OpenClaw 완벽 가이드 (8) - 훅 & 자동화"
 date: 2025-02-04
 permalink: /openclaw-guide-08-hooks/
 author: Peter Steinberger
-categories: [AI]
+categories: [AI 에이전트, OpenClaw]
 tags: [OpenClaw, Hooks, Automation, Webhook, Cron, Gmail]
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 이벤트 훅, Webhook, Cron 작업, Gmail 트리거를 알아봅니다."

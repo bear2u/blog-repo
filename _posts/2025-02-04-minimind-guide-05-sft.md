@@ -4,7 +4,7 @@ title: "MiniMind 완벽 가이드 (5) - SFT 지도 학습 미세조정"
 date: 2025-02-04
 permalink: /minimind-guide-05-sft/
 author: jingyaogong
-categories: [AI]
+categories: [LLM 학습, MiniMind]
 tags: [MiniMind, SFT, Fine-tuning, Instruction, Chat]
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 SFT(Supervised Fine-Tuning) 구현을 분석합니다."

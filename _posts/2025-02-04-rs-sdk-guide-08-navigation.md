@@ -2,7 +2,7 @@
 layout: post
 title: "RS-SDK 가이드 - 이동 & 경로"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, RS-SDK]
 tags: [rs-sdk, navigation, pathfinding, walking, doors, gates]
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk

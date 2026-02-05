@@ -2,7 +2,7 @@
 layout: post
 title: "Ralph 가이드 01 - 소개"
 date: 2025-02-04
-categories: [AI, Claude Code, Ralph]
+categories: [AI 코딩 에이전트, Ralph]
 tags: [ralph, claude-code, autonomous-development, ai-loop]
 permalink: /ralph-guide-01-intro/
 ---

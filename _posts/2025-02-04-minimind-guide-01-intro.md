@@ -4,7 +4,7 @@ title: "MiniMind 완벽 가이드 (1) - 소개 및 개요"
 date: 2025-02-04
 permalink: /minimind-guide-01-intro/
 author: jingyaogong
-categories: [AI]
+categories: [LLM 학습, MiniMind]
 tags: [MiniMind, LLM, PyTorch, Training, From Scratch]
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "3원(약 600원), 2시간으로 25.8M 파라미터 LLM을 처음부터 훈련하는 MiniMind 프로젝트를 소개합니다."

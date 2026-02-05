@@ -2,7 +2,7 @@
 layout: post
 title: "Ralph 가이드 08 - 세션 관리"
 date: 2025-02-04
-categories: [AI, Claude Code, Ralph]
+categories: [AI 코딩 에이전트, Ralph]
 tags: [ralph, session, continuity, state-management]
 permalink: /ralph-guide-08-session/
 ---

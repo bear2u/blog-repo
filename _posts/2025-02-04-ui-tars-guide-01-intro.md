@@ -4,7 +4,7 @@ title: "UI-TARS 완벽 가이드 (1) - 소개 및 개요"
 date: 2025-02-04
 permalink: /ui-tars-guide-01-intro/
 author: ByteDance
-categories: [AI]
+categories: [AI 에이전트, UI-TARS]
 tags: [UI-TARS, Agent TARS, GUI Agent, Multimodal AI, ByteDance]
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "ByteDance의 멀티모달 AI 에이전트 스택 UI-TARS를 소개합니다. Agent TARS와 UI-TARS Desktop의 핵심 기능과 아키텍처를 살펴봅니다."

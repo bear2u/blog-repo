@@ -4,7 +4,7 @@ title: "OpenClaw 완벽 가이드 (1) - 소개 및 개요"
 date: 2025-02-04
 permalink: /openclaw-guide-01-intro/
 author: Peter Steinberger
-categories: [AI]
+categories: [AI 에이전트, OpenClaw]
 tags: [OpenClaw, AI Assistant, Personal AI, Gateway, Multi-channel]
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "직접 운영하는 개인 AI 어시스턴트 OpenClaw의 소개와 핵심 기능을 알아봅니다."

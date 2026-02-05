@@ -4,7 +4,7 @@ title: "Claude Code 2.0 가이드 (6) - 명령어와 커스텀 명령어"
 date: 2025-12-28
 permalink: /claude-code-2-guide-06-commands/
 author: Sankalp
-categories: [AI]
+categories: [AI 코딩 에이전트, Claude Code]
 tags: [Claude Code, AI, 명령어, 커스텀 명령어, 워크플로우]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Claude Code의 내장 슬래시 명령어와 커스텀 명령어를 만들고 활용하는 방법을 알아봅니다."

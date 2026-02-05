@@ -4,7 +4,7 @@ title: "MiniMind 완벽 가이드 (7) - RLHF 강화 학습"
 date: 2025-02-04
 permalink: /minimind-guide-07-rlhf/
 author: jingyaogong
-categories: [AI]
+categories: [LLM 학습, MiniMind]
 tags: [MiniMind, RLHF, DPO, PPO, GRPO, Reinforcement Learning]
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 DPO, PPO, GRPO 강화 학습 구현을 분석합니다."

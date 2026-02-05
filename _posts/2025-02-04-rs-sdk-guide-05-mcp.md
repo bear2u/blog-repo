@@ -2,7 +2,7 @@
 layout: post
 title: "RS-SDK 가이드 - MCP 통합"
 date: 2025-02-04
-categories: [AI]
+categories: [개발 도구, RS-SDK]
 tags: [rs-sdk, mcp, claude-code, ai-agent, interactive]
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
