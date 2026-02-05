@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nanobot 완벽 가이드 (10) - 확장 및 커스터마이징"
-date: 2025-02-05
+date: 2026-02-05
 permalink: /nanobot-guide-10-customization/
 author: HKUDS
 categories: [AI 에이전트, Nanobot]

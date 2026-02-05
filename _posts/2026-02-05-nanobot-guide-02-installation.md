@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nanobot 완벽 가이드 (2) - 설치 및 시작"
-date: 2025-02-05
+date: 2026-02-05
 permalink: /nanobot-guide-02-installation/
 author: HKUDS
 categories: [AI 에이전트, Nanobot]

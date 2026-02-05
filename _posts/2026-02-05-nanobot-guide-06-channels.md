@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nanobot 완벽 가이드 (6) - Channels 시스템"
-date: 2025-02-05
+date: 2026-02-05
 permalink: /nanobot-guide-06-channels/
 author: HKUDS
 categories: [AI 에이전트, Nanobot]
