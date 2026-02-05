@@ -100,6 +100,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
   </div>
   <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
+    <h3><a href="/blog-repo/nanobot-guide/">Nanobot</a></h3>
+    <p>4,000줄 초경량 개인 AI 어시스턴트</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/beads-guide/">Beads</a></h3>
     <p>AI를 위한 분산 Git 기반 이슈 트래커</p>
   </div>
