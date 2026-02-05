@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - 시작하기"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, tutorial, bot-creation, script, automation]
-series: rs-sdk-guide
-part: 3
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

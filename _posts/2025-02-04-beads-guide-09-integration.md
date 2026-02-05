@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (9) - 확장 및 통합"
 date: 2025-02-04
 permalink: /beads-guide-09-integration/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, MCP, Integration, API, Extension]
-series: beads-guide
-part: 9
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 MCP 서버, 외부 통합, API 확장 방법을 분석합니다."
 ---

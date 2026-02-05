@@ -1,111 +1,57 @@
 ---
-layout: default
+layout: page
 title: Claude Code 2.0 가이드
 permalink: /claude-code-2-guide/
+icon: fas fa-robot
 ---
 
-<section class="guide-header">
-  <h1 class="guide-title">Claude Code 2.0 완벽 가이드</h1>
-  <p class="guide-desc">코딩 에이전트 활용법에 대한 종합 가이드 시리즈</p>
-  <p class="guide-author">원문: <a href="https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/" target="_blank">Sankalp's Blog</a></p>
-</section>
+# 🤖 Claude Code 2.0 완벽 가이드
 
-<section class="guide-container">
-  <div class="guide-intro">
-    <p>이 시리즈는 Sankalp의 Claude Code 2.0 심층 가이드를 번역한 것입니다. 코딩 에이전트를 효과적으로 사용하는 방법, 컨텍스트 엔지니어링, 그리고 실제 워크플로우 전략을 다룹니다.</p>
-  </div>
+> **코딩 에이전트 활용법에 대한 종합 가이드**
 
-  <div class="guide-toc">
-    <h2>목차</h2>
+원문: [Sankalp's Blog](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/)
 
-    <div class="toc-section">
-      <h3>Part 1: 소개</h3>
-      <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'claude-code-2-guide' and post.part >= 1 and post.part <= 3 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "Claude Code 2.0 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+---
 
-    <div class="toc-section">
-      <h3>Part 2: 기본 개념</h3>
-      <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'claude-code-2-guide' and post.part >= 4 and post.part <= 5 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "Claude Code 2.0 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+## 📚 목차
 
-    <div class="toc-section">
-      <h3>Part 3: 기능 심층 탐구</h3>
-      <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'claude-code-2-guide' and post.part >= 6 and post.part <= 8 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "Claude Code 2.0 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+### Part 1: 소개
 
-    <div class="toc-section">
-      <h3>Part 4: 고급 주제</h3>
-      <ul class="toc-list">
-        {% for post in site.posts reversed %}
-          {% if post.series == 'claude-code-2-guide' and post.part >= 9 and post.part <= 12 %}
-            <li class="toc-item">
-              <a href="{{ post.url | relative_url }}">
-                <span class="toc-part">{{ post.part }}.</span>
-                <span class="toc-title">{{ post.title | remove: "Claude Code 2.0 가이드 (" | remove: ") - " | split: " - " | last }}</span>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+| # | 제목 | 내용 |
+|---|------|------|
+| 01 | [소개 및 작성 배경](/blog-repo/claude-code-2-guide-01-intro/) | 가이드 시리즈 소개 |
+| 02 | [러브 스토리](/blog-repo/claude-code-2-guide-02-lore/) | Claude Code와의 여정 |
+| 03 | [Opus 4.5](/blog-repo/claude-code-2-guide-03-opus45/) | 최신 모델 소개 |
 
-  <div class="guide-quick-links">
-    <h2>빠른 참조</h2>
-    <div class="quick-links-grid">
-      <a href="{{ '/claude-code-2-guide-04-concepts/' | relative_url }}" class="quick-link-card">
-        <span class="quick-link-icon">📚</span>
-        <span class="quick-link-title">핵심 개념</span>
-        <span class="quick-link-desc">컨텍스트, 도구 호출, 에이전트 등</span>
-      </a>
-      <a href="{{ '/claude-code-2-guide-07-subagents/' | relative_url }}" class="quick-link-card">
-        <span class="quick-link-icon">🤖</span>
-        <span class="quick-link-title">서브 에이전트</span>
-        <span class="quick-link-desc">Explore, Plan, Task 도구</span>
-      </a>
-      <a href="{{ '/claude-code-2-guide-09-context-engineering/' | relative_url }}" class="quick-link-card">
-        <span class="quick-link-icon">⚙️</span>
-        <span class="quick-link-title">컨텍스트 엔지니어링</span>
-        <span class="quick-link-desc">토큰 관리와 최적화</span>
-      </a>
-      <a href="{{ '/claude-code-2-guide-11-skills-hooks/' | relative_url }}" class="quick-link-card">
-        <span class="quick-link-icon">🔧</span>
-        <span class="quick-link-title">스킬 & 훅</span>
-        <span class="quick-link-desc">워크플로우 자동화</span>
-      </a>
-    </div>
-  </div>
-</section>
+### Part 2: 기본 개념
+
+| # | 제목 | 내용 |
+|---|------|------|
+| 04 | [핵심 개념](/blog-repo/claude-code-2-guide-04-concepts/) | 컨텍스트, 도구 호출, 에이전트 |
+| 05 | [QoL 개선사항](/blog-repo/claude-code-2-guide-05-evolution/) | 버전별 개선 사항 |
+
+### Part 3: 기능 심층 탐구
+
+| # | 제목 | 내용 |
+|---|------|------|
+| 06 | [명령어](/blog-repo/claude-code-2-guide-06-commands/) | 슬래시 명령어 가이드 |
+| 07 | [서브 에이전트](/blog-repo/claude-code-2-guide-07-subagents/) | Explore, Plan, Task |
+| 08 | [워크플로우](/blog-repo/claude-code-2-guide-08-workflow/) | 실제 작업 흐름 |
+
+### Part 4: 고급 주제
+
+| # | 제목 | 내용 |
+|---|------|------|
+| 09 | [컨텍스트 엔지니어링](/blog-repo/claude-code-2-guide-09-context-engineering/) | 토큰 관리와 최적화 |
+| 10 | [MCP & 리마인더](/blog-repo/claude-code-2-guide-10-mcp-reminders/) | 외부 도구 연동 |
+| 11 | [스킬 & 훅](/blog-repo/claude-code-2-guide-11-skills-hooks/) | 워크플로우 자동화 |
+| 12 | [결론](/blog-repo/claude-code-2-guide-12-conclusion/) | 마무리 및 요약 |
+
+---
+
+## 🚀 빠른 참조
+
+- **핵심 개념** → [4장](/blog-repo/claude-code-2-guide-04-concepts/)
+- **서브 에이전트** → [7장](/blog-repo/claude-code-2-guide-07-subagents/)
+- **컨텍스트 엔지니어링** → [9장](/blog-repo/claude-code-2-guide-09-context-engineering/)
+- **스킬 & 훅** → [11장](/blog-repo/claude-code-2-guide-11-skills-hooks/)

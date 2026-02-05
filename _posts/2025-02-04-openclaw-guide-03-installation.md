@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (3) - 설치 및 설정"
 date: 2025-02-04
 permalink: /openclaw-guide-03-installation/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, Installation, Setup, Configuration, Onboarding]
-series: openclaw-guide
-part: 3
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 설치 방법과 설정 파일 구성을 상세히 알아봅니다."
 ---

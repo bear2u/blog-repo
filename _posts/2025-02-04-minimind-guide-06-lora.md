@@ -4,10 +4,8 @@ title: "MiniMind 완벽 가이드 (6) - LoRA 미세조정"
 date: 2025-02-04
 permalink: /minimind-guide-06-lora/
 author: jingyaogong
-category: AI
+categories: [AI]
 tags: [MiniMind, LoRA, Low-Rank Adaptation, Fine-tuning, Efficient]
-series: minimind-guide
-part: 6
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 LoRA(Low-Rank Adaptation) 구현을 분석합니다."
 ---

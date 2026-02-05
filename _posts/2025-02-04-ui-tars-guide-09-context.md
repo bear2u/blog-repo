@@ -4,10 +4,8 @@ title: "UI-TARS 완벽 가이드 (9) - Context Engineering"
 date: 2025-02-04
 permalink: /ui-tars-guide-09-context/
 author: ByteDance
-category: AI
+categories: [AI]
 tags: [UI-TARS, Context Engineering, Memory, Prompt, Token Management]
-series: ui-tars-guide
-part: 9
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 컨텍스트 엔지니어링을 분석합니다. 컨텍스트 관리, 메모리 시스템, 프롬프트 최적화를 살펴봅니다."
 ---

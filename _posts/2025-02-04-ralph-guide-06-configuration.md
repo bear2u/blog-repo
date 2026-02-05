@@ -4,7 +4,6 @@ title: "Ralph 가이드 06 - 구성 및 설정"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, configuration, settings, rate-limit]
-series: "ralph-guide"
 permalink: /ralph-guide-06-configuration/
 ---
 

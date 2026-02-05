@@ -4,10 +4,8 @@ title: "TrendRadar 완벽 가이드 (6) - 배포 및 활용"
 date: 2025-02-04
 permalink: /trendradar-guide-06-deployment/
 author: sansan0
-category: AI
+categories: [AI]
 tags: [TrendRadar, Deployment, Docker, GitHub Actions]
-series: trendradar-guide
-part: 6
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "TrendRadar의 다양한 배포 방법과 실전 활용 가이드입니다."
 ---

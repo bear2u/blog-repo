@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - 서버 호스팅"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, hosting, server, deployment, docker]
-series: rs-sdk-guide
-part: 10
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

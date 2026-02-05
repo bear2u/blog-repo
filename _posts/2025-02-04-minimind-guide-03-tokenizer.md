@@ -4,10 +4,8 @@ title: "MiniMind 완벽 가이드 (3) - Tokenizer 훈련"
 date: 2025-02-04
 permalink: /minimind-guide-03-tokenizer/
 author: jingyaogong
-category: AI
+categories: [AI]
 tags: [MiniMind, Tokenizer, BPE, Vocabulary, Training]
-series: minimind-guide
-part: 3
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 BPE 토크나이저 훈련 과정을 분석합니다."
 ---

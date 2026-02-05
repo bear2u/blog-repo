@@ -4,10 +4,8 @@ title: "MiniMind 완벽 가이드 (4) - Pretrain 사전 훈련"
 date: 2025-02-04
 permalink: /minimind-guide-04-pretrain/
 author: jingyaogong
-category: AI
+categories: [AI]
 tags: [MiniMind, Pretrain, Causal LM, Training, PyTorch]
-series: minimind-guide
-part: 4
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 사전 훈련(Pretrain) 구현과 데이터 처리를 분석합니다."
 ---

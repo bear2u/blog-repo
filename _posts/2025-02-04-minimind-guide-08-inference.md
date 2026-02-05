@@ -4,10 +4,8 @@ title: "MiniMind 완벽 가이드 (8) - 추론 및 배포"
 date: 2025-02-04
 permalink: /minimind-guide-08-inference/
 author: jingyaogong
-category: AI
+categories: [AI]
 tags: [MiniMind, Inference, Deployment, API, llama.cpp, vLLM]
-series: minimind-guide
-part: 8
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 추론 최적화, API 서버, 외부 생태계 통합을 분석합니다."
 ---

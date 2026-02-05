@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - Maestro Studio"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, studio, ide, visual-testing, recording]
-series: maestro-guide
-part: 8
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

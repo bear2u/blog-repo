@@ -4,7 +4,6 @@ title: "Ralph 가이드 02 - 설치 및 시작"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, installation, setup, quickstart]
-series: "ralph-guide"
 permalink: /ralph-guide-02-installation/
 ---
 

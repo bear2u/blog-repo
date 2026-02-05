@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - 아키텍처 & MCP"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, architecture, mcp, llm, internal]
-series: maestro-guide
-part: 10
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

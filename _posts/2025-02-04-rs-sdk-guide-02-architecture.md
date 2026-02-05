@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - 아키텍처"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, architecture, gateway, websocket, game-server]
-series: rs-sdk-guide
-part: 2
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

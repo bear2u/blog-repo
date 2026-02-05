@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - AI 프로바이더"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, providers, anthropic, openai, google, azure]
-series: opencode-guide
-part: 6
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

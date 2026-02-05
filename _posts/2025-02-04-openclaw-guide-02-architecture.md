@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (2) - Gateway 아키텍처"
 date: 2025-02-04
 permalink: /openclaw-guide-02-architecture/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, Gateway, WebSocket, Architecture, Protocol]
-series: openclaw-guide
-part: 2
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw Gateway의 WebSocket 아키텍처와 프로토콜을 분석합니다."
 ---

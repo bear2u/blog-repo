@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - 소개 및 주요 특징"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, ai-agent, cli, coding-assistant, open-source]
-series: opencode-guide
-part: 1
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

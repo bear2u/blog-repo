@@ -4,10 +4,8 @@ title: "UI-TARS 완벽 가이드 (8) - MCP 인프라"
 date: 2025-02-04
 permalink: /ui-tars-guide-08-mcp/
 author: ByteDance
-category: AI
+categories: [AI]
 tags: [UI-TARS, MCP, Model Context Protocol, MCP Server, MCP Client]
-series: ui-tars-guide
-part: 8
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 MCP(Model Context Protocol) 인프라를 분석합니다. MCP 서버와 클라이언트 구현을 살펴봅니다."
 ---

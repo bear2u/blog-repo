@@ -4,10 +4,8 @@ title: "Claude Code 2.0 가이드 (4) - 비기술자를 위한 핵심 개념"
 date: 2025-12-28
 permalink: /claude-code-2-guide-04-concepts/
 author: Sankalp
-category: AI
+categories: [AI]
 tags: [Claude Code, AI, LLM, 컨텍스트, 에이전트, 도구 호출]
-series: claude-code-2-guide
-part: 4
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "기술적으로 가벼운 분들을 위한 핵심 개념 설명입니다. 컨텍스트, 도구 호출, 에이전트, 하네스/스캐폴딩에 대해 알아봅니다."
 ---

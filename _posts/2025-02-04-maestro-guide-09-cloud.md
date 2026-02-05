@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - Maestro Cloud"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, cloud, ci-cd, parallel-testing, scaling]
-series: maestro-guide
-part: 9
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (8) - Molecules & Wisps"
 date: 2025-02-04
 permalink: /beads-guide-08-molecules/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, Molecules, Wisps, Templates, Workflow]
-series: beads-guide
-part: 8
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 템플릿 워크플로우 시스템인 Molecules와 Wisps를 분석합니다."
 ---

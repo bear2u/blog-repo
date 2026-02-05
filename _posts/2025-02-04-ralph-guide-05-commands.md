@@ -4,7 +4,6 @@ title: "Ralph 가이드 05 - CLI 명령어"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, cli, commands, terminal]
-series: "ralph-guide"
 permalink: /ralph-guide-05-commands/
 ---
 

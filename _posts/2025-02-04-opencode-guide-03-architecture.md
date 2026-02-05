@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - 아키텍처"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, architecture, monorepo, client-server, bun]
-series: opencode-guide
-part: 3
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

@@ -4,10 +4,8 @@ title: "UI-TARS 완벽 가이드 (7) - Tarko 프레임워크"
 date: 2025-02-04
 permalink: /ui-tars-guide-07-tarko/
 author: ByteDance
-category: AI
+categories: [AI]
 tags: [UI-TARS, Tarko, Agent Framework, Event Stream, LLM Client]
-series: ui-tars-guide
-part: 7
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 핵심 에이전트 프레임워크 Tarko를 분석합니다. Agent, LLM Client, MCP Agent, Context Engineer 모듈을 살펴봅니다."
 ---

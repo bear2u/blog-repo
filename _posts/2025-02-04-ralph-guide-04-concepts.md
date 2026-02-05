@@ -4,7 +4,6 @@ title: "Ralph 가이드 04 - 핵심 개념"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, autonomous-loop, exit-signal, concepts]
-series: "ralph-guide"
 permalink: /ralph-guide-04-concepts/
 ---
 

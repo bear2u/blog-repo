@@ -4,10 +4,8 @@ title: "Claude Code 2.0 가이드 (3) - Opus 4.5가 좋은 이유"
 date: 2025-12-28
 permalink: /claude-code-2-guide-03-opus45/
 author: Sankalp
-category: AI
+categories: [AI]
 tags: [Claude Code, AI, Opus 4.5, GPT-5.2, Codex, 모델 비교]
-series: claude-code-2-guide
-part: 3
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Opus 4.5가 왜 좋은 느낌인지, GPT-5.2-Codex와의 비교, 그리고 Claude Code 제품이 어떻게 마법 같은 경험을 제공하는지 살펴봅니다."
 ---

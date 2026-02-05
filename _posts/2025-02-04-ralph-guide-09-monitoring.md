@@ -4,7 +4,6 @@ title: "Ralph 가이드 09 - 모니터링"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, monitoring, tmux, dashboard, logs]
-series: "ralph-guide"
 permalink: /ralph-guide-09-monitoring/
 ---
 

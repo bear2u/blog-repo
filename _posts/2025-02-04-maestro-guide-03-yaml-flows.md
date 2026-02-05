@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - YAML 플로우"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, yaml, flow, test-definition, syntax]
-series: maestro-guide
-part: 3
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

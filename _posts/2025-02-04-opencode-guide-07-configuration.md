@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - 설정 및 권한"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, configuration, permissions, settings, security]
-series: opencode-guide
-part: 7
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - 내장 도구"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, tools, edit, bash, grep, ai-tools]
-series: opencode-guide
-part: 5
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

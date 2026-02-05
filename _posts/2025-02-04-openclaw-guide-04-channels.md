@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (4) - 메시징 채널"
 date: 2025-02-04
 permalink: /openclaw-guide-04-channels/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, Channels, WhatsApp, Telegram, Discord, Slack, Signal]
-series: openclaw-guide
-part: 4
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw이 지원하는 다양한 메시징 채널의 설정과 사용법을 알아봅니다."
 ---

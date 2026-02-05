@@ -4,10 +4,8 @@ title: "Claude Code 2.0 가이드 (11) - 스킬, 플러그인, 훅"
 date: 2025-12-28
 permalink: /claude-code-2-guide-11-skills-hooks/
 author: Sankalp
-category: AI
+categories: [AI]
 tags: [Claude Code, AI, 스킬, 플러그인, 훅, 자동화]
-series: claude-code-2-guide
-part: 11
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "스킬, 플러그인, 훅의 개념과 활용법, 그리고 이것들을 결합하여 워크플로우를 최적화하는 방법을 알아봅니다."
 ---

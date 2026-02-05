@@ -4,7 +4,6 @@ title: "Ralph 가이드 03 - 파일 구조"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, files, prompt, fix-plan, configuration]
-series: "ralph-guide"
 permalink: /ralph-guide-03-files/
 ---
 

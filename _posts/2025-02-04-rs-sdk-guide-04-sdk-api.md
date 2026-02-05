@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - SDK API"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, api, botsdk, botactions, typescript]
-series: rs-sdk-guide
-part: 4
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

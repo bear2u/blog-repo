@@ -4,7 +4,6 @@ title: "Ralph 가이드 01 - 소개"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, claude-code, autonomous-development, ai-loop]
-series: "ralph-guide"
 permalink: /ralph-guide-01-intro/
 ---
 

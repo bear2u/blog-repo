@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (6) - 도구 & 브라우저"
 date: 2025-02-04
 permalink: /openclaw-guide-06-tools/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, Browser, Canvas, Tools, Automation]
-series: openclaw-guide
-part: 6
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 브라우저 제어, Canvas, 노드 도구를 상세히 알아봅니다."
 ---

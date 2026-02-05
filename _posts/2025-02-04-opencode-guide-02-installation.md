@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - 설치 가이드"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, installation, npm, homebrew, desktop-app]
-series: opencode-guide
-part: 2
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

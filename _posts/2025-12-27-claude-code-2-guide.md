@@ -3,7 +3,7 @@ layout: post
 title: "Claude Code 2.0 완벽 가이드: 코딩 에이전트 마스터하기"
 date: 2025-12-27
 author: Sankalp
-category: AI
+categories: [AI]
 tags: [Claude Code, AI, 코딩 에이전트, Anthropic, Opus 4.5, 컨텍스트 엔지니어링]
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "Claude Code 2.0의 모든 기능과 Opus 4.5 워크플로우, 컨텍스트 엔지니어링 전략까지 - AI 코딩 에이전트를 효과적으로 활용하는 방법에 대한 종합 가이드입니다."

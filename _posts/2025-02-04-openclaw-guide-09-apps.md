@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (9) - 앱 & 노드"
 date: 2025-02-04
 permalink: /openclaw-guide-09-apps/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, macOS, iOS, Android, Apps, Nodes]
-series: openclaw-guide
-part: 9
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 macOS, iOS, Android 앱과 노드 시스템을 알아봅니다."
 ---

@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - 소개"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, runescape, bot, ai-agent, game-automation]
-series: rs-sdk-guide
-part: 1
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

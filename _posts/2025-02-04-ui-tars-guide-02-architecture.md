@@ -4,10 +4,8 @@ title: "UI-TARS 완벽 가이드 (2) - 전체 아키텍처"
 date: 2025-02-04
 permalink: /ui-tars-guide-02-architecture/
 author: ByteDance
-category: AI
+categories: [AI]
 tags: [UI-TARS, 아키텍처, 시스템 설계, MCP, 이벤트 스트림]
-series: ui-tars-guide
-part: 2
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 전체 시스템 아키텍처를 분석합니다. 모듈 간 관계, 데이터 흐름, 핵심 설계 패턴을 살펴봅니다."
 ---

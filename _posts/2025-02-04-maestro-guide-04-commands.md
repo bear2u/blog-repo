@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - 핵심 명령어"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, commands, tapOn, inputText, assertVisible]
-series: maestro-guide
-part: 4
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

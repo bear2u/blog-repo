@@ -4,10 +4,8 @@ title: "UI-TARS 완벽 가이드 (6) - Operators"
 date: 2025-02-04
 permalink: /ui-tars-guide-06-operators/
 author: ByteDance
-category: AI
+categories: [AI]
 tags: [UI-TARS, Operators, Browser, NutJS, ADB, Puppeteer]
-series: ui-tars-guide
-part: 6
 original_url: "https://github.com/bytedance/UI-TARS-desktop"
 excerpt: "UI-TARS의 Operator들을 분석합니다. Browser, NutJS, ADB Operator의 구현과 동작 원리를 살펴봅니다."
 ---

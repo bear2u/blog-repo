@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (1) - 소개 및 개요"
 date: 2025-02-04
 permalink: /beads-guide-01-intro/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, Issue Tracker, Git, AI Agent, Go]
-series: beads-guide
-part: 1
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "AI 에이전트를 위한 분산 Git 기반 이슈 트래커 Beads를 소개합니다."
 ---

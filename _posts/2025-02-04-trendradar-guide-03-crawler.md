@@ -4,10 +4,8 @@ title: "TrendRadar 완벽 가이드 (3) - 크롤러 & 데이터 소스"
 date: 2025-02-04
 permalink: /trendradar-guide-03-crawler/
 author: sansan0
-category: AI
+categories: [AI]
 tags: [TrendRadar, Crawler, RSS, NewsNow, Web Scraping]
-series: trendradar-guide
-part: 3
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "TrendRadar의 뉴스 수집 시스템과 다양한 데이터 소스를 분석합니다."
 ---

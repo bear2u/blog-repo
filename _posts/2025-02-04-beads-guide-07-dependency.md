@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (7) - 의존성 관리"
 date: 2025-02-04
 permalink: /beads-guide-07-dependency/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, Dependency, Graph, Ready, Topological Sort]
-series: beads-guide
-part: 7
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 의존성 그래프와 Ready 작업 감지 메커니즘을 분석합니다."
 ---

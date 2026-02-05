@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (2) - 아키텍처"
 date: 2025-02-04
 permalink: /beads-guide-02-architecture/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, Architecture, SQLite, JSONL, Git]
-series: beads-guide
-part: 2
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 3계층 데이터 모델과 분산 아키텍처를 분석합니다."
 ---

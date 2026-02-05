@@ -2,10 +2,8 @@
 layout: post
 title: "RS-SDK 가이드 - 경제 시스템"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [rs-sdk, economy, banking, shopping, items]
-series: rs-sdk-guide
-part: 7
 author: MaxBittker
 original_url: https://github.com/MaxBittker/rs-sdk
 ---

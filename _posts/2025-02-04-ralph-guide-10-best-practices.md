@@ -4,7 +4,6 @@ title: "Ralph 가이드 10 - 베스트 프랙티스"
 date: 2025-02-04
 categories: [AI, Claude Code, Ralph]
 tags: [ralph, best-practices, tips, troubleshooting]
-series: "ralph-guide"
 permalink: /ralph-guide-10-best-practices/
 ---
 

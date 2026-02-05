@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - LSP & 스킬 시스템"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, lsp, language-server, skills, automation]
-series: opencode-guide
-part: 10
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

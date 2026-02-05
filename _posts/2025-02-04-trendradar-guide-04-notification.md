@@ -4,10 +4,8 @@ title: "TrendRadar 완벽 가이드 (4) - 알림 시스템"
 date: 2025-02-04
 permalink: /trendradar-guide-04-notification/
 author: sansan0
-category: AI
+categories: [AI]
 tags: [TrendRadar, Notification, Telegram, WeChat, Slack]
-series: trendradar-guide
-part: 4
 original_url: "https://github.com/sansan0/TrendRadar"
 excerpt: "TrendRadar의 다중 채널 알림 시스템을 분석합니다."
 ---

@@ -4,10 +4,8 @@ title: "Beads 완벽 가이드 (4) - 데이터 모델"
 date: 2025-02-04
 permalink: /beads-guide-04-data-model/
 author: Steve Yegge
-category: AI
+categories: [AI]
 tags: [Beads, Data Model, JSONL, Schema, Types]
-series: beads-guide
-part: 4
 original_url: "https://github.com/steveyegge/beads"
 excerpt: "Beads의 핵심 데이터 타입과 JSONL 스키마를 분석합니다."
 ---

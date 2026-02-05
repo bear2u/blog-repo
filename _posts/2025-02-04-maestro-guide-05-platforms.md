@@ -2,10 +2,8 @@
 layout: post
 title: "Maestro 가이드 - 플랫폼별 테스트"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [maestro, android, ios, web, react-native, flutter]
-series: maestro-guide
-part: 5
 author: mobile-dev-inc
 original_url: https://github.com/mobile-dev-inc/Maestro
 ---

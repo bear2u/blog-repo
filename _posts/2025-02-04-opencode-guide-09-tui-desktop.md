@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - TUI & 데스크톱 앱"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, tui, terminal, desktop, tauri, solidjs]
-series: opencode-guide
-part: 9
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

@@ -4,10 +4,8 @@ title: "OpenClaw 완벽 가이드 (7) - 음성 & Talk Mode"
 date: 2025-02-04
 permalink: /openclaw-guide-07-voice/
 author: Peter Steinberger
-category: AI
+categories: [AI]
 tags: [OpenClaw, Voice, Talk Mode, ElevenLabs, Speech, TTS]
-series: openclaw-guide
-part: 7
 original_url: "https://github.com/openclaw/openclaw"
 excerpt: "OpenClaw의 Voice Wake, Talk Mode, ElevenLabs TTS 통합을 알아봅니다."
 ---

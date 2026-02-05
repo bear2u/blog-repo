@@ -4,10 +4,8 @@ title: "Claude Code 2.0 가이드 (10) - MCP와 시스템 리마인더"
 date: 2025-12-28
 permalink: /claude-code-2-guide-10-mcp-reminders/
 author: Sankalp
-category: AI
+categories: [AI]
 tags: [Claude Code, AI, MCP, 시스템 리마인더, Plan Mode]
-series: claude-code-2-guide
-part: 10
 original_url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
 excerpt: "MCP 서버와 코드 실행, 시스템 리마인더가 어떻게 컨텍스트 열화에 대응하는지, Plan Mode의 아키텍처를 살펴봅니다."
 ---

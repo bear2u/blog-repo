@@ -1,33 +1,151 @@
+# The Site Configuration
+# Import the theme
+theme: jekyll-theme-chirpy
+
+# Site Settings
+lang: ko-KR
+timezone: Asia/Seoul
+
 title: Tech Blog
-description: AI & 개발 관련 번역 블로그
-author: Bear
-baseurl: "/blog-repo"
+tagline: AI & 개발 관련 해외 콘텐츠 번역
+description: >-
+  Claude Code, AI 에이전트, 개발 도구 등 최신 기술을 한국어로 번역하여 공유합니다.
+
 url: "https://bear2u.github.io"
+baseurl: "/blog-repo"
 
-markdown: kramdown
+github:
+  username: bear2u
+
+social:
+  name: Bear
+  email: bear2u@gmail.com
+  links:
+    - https://github.com/bear2u
+
+# Site Verification Settings
+google_site_verification:
+
+# Web Analytics Settings
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+# Pageviews Settings
+pageviews:
+  provider:
+
+# Theme Mode [light | dark]
+theme_mode:
+
+# CDN endpoint for media resources
+cdn:
+
+# Avatar
+avatar:
+
+# Table of Contents
+toc: true
+
+comments:
+  provider:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+# Self-hosted
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+# Kramdown
 kramdown:
-  input: GFM
+  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-permalink: /:title/
-
+# Collections
 collections:
-  posts:
+  tabs:
     output: true
+    sort_by: order
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
+      comments: true
+      toc: true
+      permalink: /:title/
+  - scope:
+      path: _tabs
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-plugins:
-  - jekyll-seo-tag
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
   - README.md
-  - vendor
+  - LICENSE
+  - "*.config.js"
+  - package*.json
   - claude-code-2.0-guide-korean.md
+  - claude2.txt
+
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

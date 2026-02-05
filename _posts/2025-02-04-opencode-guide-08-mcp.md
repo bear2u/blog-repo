@@ -2,10 +2,8 @@
 layout: post
 title: "OpenCode 가이드 - MCP 통합"
 date: 2025-02-04
-category: AI
+categories: [AI]
 tags: [opencode, mcp, model-context-protocol, tools, integration]
-series: opencode-guide
-part: 8
 author: anomalyco
 original_url: https://github.com/anomalyco/opencode
 ---

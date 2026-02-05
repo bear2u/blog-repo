@@ -4,10 +4,8 @@ title: "MiniMind 완벽 가이드 (2) - 모델 아키텍처"
 date: 2025-02-04
 permalink: /minimind-guide-02-architecture/
 author: jingyaogong
-category: AI
+categories: [AI]
 tags: [MiniMind, Transformer, RoPE, RMSNorm, MoE, Architecture]
-series: minimind-guide
-part: 2
 original_url: "https://github.com/jingyaogong/minimind"
 excerpt: "MiniMind의 Transformer 아키텍처, RoPE, RMSNorm, MoE 구현을 분석합니다."
 ---
