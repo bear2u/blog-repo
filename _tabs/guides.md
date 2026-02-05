@@ -74,6 +74,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/ralph-guide/">Ralph</a></h3>
     <p>자율 AI 개발 루프 시스템</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/superset-guide/">Superset</a></h3>
+    <p>CLI 코딩 에이전트를 위한 터보차지 터미널</p>
+  </div>
 </div>
 
 <h2 class="section-title">AI 에이전트</h2>
