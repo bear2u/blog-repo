@@ -68,16 +68,21 @@ find /tmp/{repo-name} -maxdepth 2 -type d | head -30
 
 ### Phase 4: 포스트 파일 자동 생성
 
+**중요: 날짜는 반드시 현재 시스템 날짜 사용**
+- `date` 명령어로 현재 날짜 확인 후 사용
+- 파일명과 front matter의 date 모두 동일한 현재 날짜 사용
+- 예: 시스템 날짜가 2026-02-05면 → `2026-02-05` 사용
+
 각 챕터별 파일 생성:
-- 파일명: `_posts/YYYY-MM-DD-{series}-guide-{part번호}-{slug}.md`
-- 예: `_posts/2025-02-05-superset-guide-01-intro.md`
+- 파일명: `_posts/{현재날짜}-{series}-guide-{part번호}-{slug}.md`
+- 예: `_posts/2026-02-05-superset-guide-01-intro.md`
 
 Front Matter 템플릿:
 ```yaml
 ---
 layout: post
 title: "{프로젝트명} 완벽 가이드 ({번호}) - {챕터 제목}"
-date: {오늘날짜}
+date: {현재 시스템 날짜 - date +%Y-%m-%d 결과}
 permalink: /{series}-guide-{part번호}-{slug}/
 author: {원저자/팀}
 categories: [{카테고리1}, {카테고리2}]
@@ -169,10 +174,12 @@ git push origin main
 
 ## 명명 규칙
 
-| 항목 | 형식 | 예시 |
+**중요: 날짜는 항상 현재 시스템 날짜 (`date +%Y-%m-%d`) 사용**
+
+| 항목 | 형식 | 예시 (시스템 날짜가 2026-02-05일 때) |
 |-----|------|-----|
 | 시리즈 slug | `{project}-guide` | `superset-guide` |
-| 포스트 파일 | `YYYY-MM-DD-{series}-{part}-{slug}.md` | `2025-02-05-superset-guide-01-intro.md` |
+| 포스트 파일 | `{현재날짜}-{series}-{part}-{slug}.md` | `2026-02-05-superset-guide-01-intro.md` |
 | permalink | `/{series}-{part}-{slug}/` | `/superset-guide-01-intro/` |
 | 인덱스 파일 | `{series}.md` | `superset-guide.md` |
 
