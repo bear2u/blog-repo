@@ -1,7 +1,8 @@
 ---
+layout: page
 title: About
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 # Tech Blog
@@ -28,6 +29,7 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역하여 공유합니다
 | [RS-SDK](/blog-repo/rs-sdk-guide/) | RuneScape 봇 개발 SDK |
 | [Maestro](/blog-repo/maestro-guide/) | 모바일 UI 테스트 자동화 |
 | [Ralph](/blog-repo/ralph-guide/) | 자율 AI 개발 루프 |
+| [WrenAI](/blog-repo/wrenai-guide/) | 자연어 → SQL 변환 GenBI |
 
 ## Contact
 

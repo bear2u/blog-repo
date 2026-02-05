@@ -1,0 +1,71 @@
+<!-- Markdown Copy Button - Small Icon -->
+<button id="copy-markdown-btn" class="copy-md-btn" title="마크다운 복사">
+  <i id="copy-icon" class="fas fa-copy"></i>
+</button>
+
+<textarea id="raw-markdown-content" style="display: none;">---
+layout: {{ page.layout }}
+title: "{{ page.title | replace: '"', '\"' }}"
+date: {{ page.date | date: "%Y-%m-%d" }}
+{% if page.permalink %}permalink: {{ page.permalink }}
+{% endif %}{% if page.author %}author: {{ page.author }}
+{% endif %}{% if page.categories.size > 0 %}categories: [{{ page.categories | join: ", " }}]
+{% endif %}{% if page.tags.size > 0 %}tags: [{{ page.tags | join: ", " }}]
+{% endif %}{% if page.original_url %}original_url: "{{ page.original_url }}"
+{% endif %}{% if page.excerpt %}excerpt: "{{ page.excerpt | strip_html | replace: '"', '\"' | strip_newlines | truncate: 200 }}"
+{% endif %}---
+
+{{ page.content }}</textarea>
+
+<script>
+document.getElementById('copy-markdown-btn').addEventListener('click', function() {
+  const content = document.getElementById('raw-markdown-content').value;
+  const btn = this;
+  const icon = document.getElementById('copy-icon');
+
+  navigator.clipboard.writeText(content).then(() => {
+    icon.className = 'fas fa-check';
+    btn.classList.add('copied');
+
+    setTimeout(() => {
+      icon.className = 'fas fa-copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  }).catch(err => {
+    const textarea = document.getElementById('raw-markdown-content');
+    textarea.style.display = 'block';
+    textarea.select();
+    document.execCommand('copy');
+    textarea.style.display = 'none';
+
+    icon.className = 'fas fa-check';
+    setTimeout(() => { icon.className = 'fas fa-copy'; }, 2000);
+  });
+});
+</script>
+
+<style>
+.copy-md-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted-color, #6c757d);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  opacity: 0.6;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.copy-md-btn:hover {
+  opacity: 1;
+  color: var(--link-color, #1890ff);
+}
+
+.copy-md-btn.copied {
+  color: #28a745;
+  opacity: 1;
+}
+</style>
