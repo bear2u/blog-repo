@@ -79,6 +79,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/superset-guide/">Superset</a></h3>
     <p>CLI 코딩 에이전트를 위한 터보차지 터미널</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-tool">개발 도구</span>
+    <h3><a href="/blog-repo/code-server-guide/">code-server</a></h3>
+    <p>브라우저에서 실행하는 VS Code</p>
+  </div>
 </div>
 
 <h2 class="section-title">AI 에이전트</h2>
