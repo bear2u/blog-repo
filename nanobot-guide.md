@@ -17,16 +17,16 @@ Nanobot은 [HKUDS](https://github.com/HKUDS)에서 개발한 초경량 개인 AI
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 01 | [소개 및 개요](/nanobot-guide-01-intro/) | Nanobot이란? 주요 특징, 아키텍처 개요 |
-| 02 | [설치 및 시작](/nanobot-guide-02-installation/) | 설치 방법, 설정, 채널 연결 |
-| 03 | [아키텍처 분석](/nanobot-guide-03-architecture/) | 모듈 구조, 데이터 흐름, 설계 원칙 |
-| 04 | [Agent Loop](/nanobot-guide-04-agent-loop/) | 핵심 처리 엔진, 컨텍스트 빌더, 세션 관리 |
-| 05 | [Tools 시스템](/nanobot-guide-05-tools/) | 내장 도구, 파일/셸/웹 도구, 커스텀 도구 |
-| 06 | [Channels](/nanobot-guide-06-channels/) | Telegram, WhatsApp, Feishu 연동 |
-| 07 | [Skills](/nanobot-guide-07-skills/) | 스킬 시스템, 내장 스킬, 커스텀 스킬 개발 |
-| 08 | [Cron & Heartbeat](/nanobot-guide-08-cron/) | 스케줄링, 주기적 작업, 자동화 |
-| 09 | [Providers](/nanobot-guide-09-providers/) | LLM 프로바이더, OpenRouter, vLLM |
-| 10 | [확장 및 커스터마이징](/nanobot-guide-10-customization/) | 워크스페이스, 도구 추가, 베스트 프랙티스 |
+| 01 | [소개 및 개요]({{ site.baseurl }}/nanobot-guide-01-intro/) | Nanobot이란? 주요 특징, 아키텍처 개요 |
+| 02 | [설치 및 시작]({{ site.baseurl }}/nanobot-guide-02-installation/) | 설치 방법, 설정, 채널 연결 |
+| 03 | [아키텍처 분석]({{ site.baseurl }}/nanobot-guide-03-architecture/) | 모듈 구조, 데이터 흐름, 설계 원칙 |
+| 04 | [Agent Loop]({{ site.baseurl }}/nanobot-guide-04-agent-loop/) | 핵심 처리 엔진, 컨텍스트 빌더, 세션 관리 |
+| 05 | [Tools 시스템]({{ site.baseurl }}/nanobot-guide-05-tools/) | 내장 도구, 파일/셸/웹 도구, 커스텀 도구 |
+| 06 | [Channels]({{ site.baseurl }}/nanobot-guide-06-channels/) | Telegram, WhatsApp, Feishu 연동 |
+| 07 | [Skills]({{ site.baseurl }}/nanobot-guide-07-skills/) | 스킬 시스템, 내장 스킬, 커스텀 스킬 개발 |
+| 08 | [Cron & Heartbeat]({{ site.baseurl }}/nanobot-guide-08-cron/) | 스케줄링, 주기적 작업, 자동화 |
+| 09 | [Providers]({{ site.baseurl }}/nanobot-guide-09-providers/) | LLM 프로바이더, OpenRouter, vLLM |
+| 10 | [확장 및 커스터마이징]({{ site.baseurl }}/nanobot-guide-10-customization/) | 워크스페이스, 도구 추가, 베스트 프랙티스 |
 
 ---
 
