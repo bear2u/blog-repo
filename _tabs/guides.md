@@ -132,6 +132,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/rs-sdk-guide/">RS-SDK</a></h3>
     <p>RuneScape 봇 개발 SDK</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-tool">개발 도구</span>
+    <h3><a href="/blog-repo/scrapegraph-guide/">ScrapeGraphAI</a></h3>
+    <p>LLM 기반 차세대 웹 스크래핑 라이브러리</p>
+  </div>
 </div>
 
 <h2 class="section-title">LLM 학습</h2>
