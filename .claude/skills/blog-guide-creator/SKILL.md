@@ -27,7 +27,7 @@ GitHub 레포지토리 URL을 받아 자동으로 클론, 분석하여 한국어
 ```
 GitHub URL 입력
     ↓
-레포지토리 클론 (/tmp)
+레포지토리 클론 (Scratchpad)
     ↓
 핵심 파일 분석 (README, 소스코드, 문서)
     ↓
@@ -40,6 +40,8 @@ GitHub URL 입력
 가이드 목록 업데이트 (_tabs/guides.md, index.html)
     ↓
 Git commit & push
+    ↓
+Cleanup (클론한 레포지토리 삭제)
 ```
 
 ---
@@ -531,6 +533,72 @@ git push origin main
 
 ---
 
+## 🧹 Phase 8: Cleanup (정리)
+
+### 8.1 클론한 레포지토리 삭제
+
+**중요**: 작업이 완료되면 Scratchpad에 클론한 레포지토리를 삭제하여 디스크 공간 확보
+
+```bash
+# 클론한 레포지토리 위치
+SCRATCHPAD_DIR="/tmp/claude-0/-home-blog/*/scratchpad"
+REPO_NAME="project-name"
+
+# 레포지토리 삭제
+cd "$SCRATCHPAD_DIR"
+rm -rf "$REPO_NAME"
+
+echo "✅ Cleanup 완료: $REPO_NAME 삭제됨"
+```
+
+### 8.2 전체 Cleanup 스크립트
+
+```bash
+# 작업 완료 후 자동 정리
+cleanup_repo() {
+    local repo_name=$1
+    local scratchpad_dir="/tmp/claude-0/-home-blog/*/scratchpad"
+
+    if [ -d "$scratchpad_dir/$repo_name" ]; then
+        rm -rf "$scratchpad_dir/$repo_name"
+        echo "✅ $repo_name 삭제 완료"
+    else
+        echo "⚠️  $repo_name 디렉토리를 찾을 수 없음"
+    fi
+}
+
+# 사용 예시
+cleanup_repo "superset"
+```
+
+### 8.3 최종 확인
+
+```bash
+# 1. Git push 성공 확인
+git log --oneline -1
+
+# 2. 생성된 파일들 확인
+echo "생성된 포스트 파일:"
+ls -1 _posts/{series}-guide-*.md
+
+echo "인덱스 페이지:"
+ls -l {series}-guide.md
+
+# 3. Scratchpad 정리 확인
+echo "Scratchpad 상태:"
+ls -la /tmp/claude-0/-home-blog/*/scratchpad/
+
+# 4. 최종 성공 메시지
+echo "
+✅ 가이드 생성 완료!
+✅ Git push 완료
+✅ Cleanup 완료
+🎉 모든 작업이 성공적으로 완료되었습니다!
+"
+```
+
+---
+
 ## 🎨 명명 규칙 요약
 
 | 항목 | 형식 | 예시 |
@@ -564,6 +632,10 @@ grep "{프로젝트명}" index.html
 
 # 5. Git 상태 확인
 git status
+
+# 6. Cleanup 확인 (클론한 레포지토리 삭제됨)
+SCRATCHPAD="/tmp/claude-0/-home-blog/*/scratchpad"
+ls -la "$SCRATCHPAD" | grep -v "{repo-name}" && echo "✅ Cleanup 완료"
 ```
 
 ---
@@ -603,6 +675,9 @@ https://github.com/superset-sh/superset
 ✅ _tabs/guides.md 업데이트 완료
 ✅ index.html 업데이트 완료
 ✅ Git commit & push 완료: a3f72b9
+✅ Cleanup 완료: superset 디렉토리 삭제됨
+
+🎉 모든 작업이 성공적으로 완료되었습니다!
 ```
 
 ---
@@ -736,10 +811,14 @@ date +%Y-%m-%d
 ## 끝
 
 이 스킬을 사용하면 GitHub 레포지토리 URL만 제공하면 자동으로:
-1. 레포지토리 클론 및 분석
+1. 레포지토리 클론 및 분석 (Scratchpad 사용)
 2. 한국어 가이드 시리즈 생성 (8-12개 챕터)
 3. 블로그 인덱스 페이지 생성
 4. 홈/가이드 목록 업데이트
 5. Git commit & push
+6. **Cleanup: 클론한 레포지토리 자동 삭제**
 
 **모든 과정이 자동화되어 5-10분 내에 완성됩니다!** 🚀
+
+### 디스크 공간 절약
+Cleanup 단계에서 클론한 레포지토리를 자동으로 삭제하여 디스크 공간을 절약합니다.
