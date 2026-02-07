@@ -85,6 +85,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/code-server-guide/">code-server</a></h3>
     <p>브라우저에서 실행하는 VS Code</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/specweave-guide/">SpecWeave</a></h3>
+    <p>AI 코딩을 위한 엔터프라이즈 레이어</p>
+  </div>
 </div>
 
 <h2 class="section-title">AI 에이전트</h2>
