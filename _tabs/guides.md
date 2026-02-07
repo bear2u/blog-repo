@@ -153,6 +153,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/scrapegraph-guide/">ScrapeGraphAI</a></h3>
     <p>LLM 기반 차세대 웹 스크래핑 라이브러리</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-tool">데스크톱</span>
+    <h3><a href="/blog-repo/tauri-guide/">Tauri</a></h3>
+    <p>Rust 기반 초경량 크로스 플랫폼 데스크톱 프레임워크</p>
+  </div>
 </div>
 
 <h2 class="section-title">LLM 학습</h2>
