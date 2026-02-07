@@ -47,6 +47,7 @@ order: 1
 .badge-agent { background: #cce5ff; color: #004085; }
 .badge-tool { background: #fff3cd; color: #856404; }
 .badge-llm { background: #f8d7da; color: #721c24; }
+.badge-blog { background: #e2e3e5; color: #383d41; }
 .section-title {
   font-size: 1.3rem;
   margin: 1.5rem 0 1rem 0;
@@ -150,5 +151,14 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <span class="badge badge-llm">LLM</span>
     <h3><a href="/blog-repo/minimind-guide/">MiniMind</a></h3>
     <p>2시간 만에 LLM 훈련하기</p>
+  </div>
+</div>
+
+<h2 class="section-title">일반 블로그</h2>
+<div class="guide-grid">
+  <div class="guide-card">
+    <span class="badge badge-blog">블로그</span>
+    <h3><a href="/blog-repo/my-ai-adoption-journey/">나의 AI 도입 여정</a></h3>
+    <p>Mitchell Hashimoto의 AI 에이전트 도입 6단계</p>
   </div>
 </div>
