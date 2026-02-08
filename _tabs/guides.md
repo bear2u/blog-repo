@@ -67,6 +67,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
   </div>
   <div class="guide-card">
     <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/mux-guide/">Mux</a></h3>
+    <p>병렬 에이전트 개발을 위한 코딩 멀티플렉서 (8챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
     <h3><a href="/blog-repo/opencode-guide/">OpenCode</a></h3>
     <p>오픈소스 AI 코딩 에이전트</p>
   </div>
