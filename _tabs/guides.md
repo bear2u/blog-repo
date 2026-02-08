@@ -179,6 +179,15 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
   </div>
 </div>
 
+<h2 class="section-title">AI 음악</h2>
+<div class="guide-grid">
+  <div class="guide-card">
+    <span class="badge badge-llm">AI 음악</span>
+    <h3><a href="/blog-repo/ace-step-guide/">ACE-Step 1.5</a></h3>
+    <p>오픈소스 AI 음악 생성 모델 (10챕터)</p>
+  </div>
+</div>
+
 <h2 class="section-title">일반 블로그</h2>
 <div class="guide-grid">
   <div class="guide-card">
