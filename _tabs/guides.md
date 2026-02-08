@@ -173,6 +173,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
     <h3><a href="/blog-repo/ghostty-guide/">Ghostty</a></h3>
     <p>Zig 기반 GPU 가속 차세대 터미널 에뮬레이터</p>
   </div>
+  <div class="guide-card">
+    <span class="badge badge-tool">개발 도구</span>
+    <h3><a href="/blog-repo/check-if-email-exists-guide/">check-if-email-exists</a></h3>
+    <p>이메일을 보내지 않고 이메일 주소 유효성 검증 (6챕터)</p>
+  </div>
 </div>
 
 <h2 class="section-title">LLM 학습</h2>
