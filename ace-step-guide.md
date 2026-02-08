@@ -17,16 +17,16 @@ icon: fas fa-music
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 01 | [소개 및 개요](/ace-step-guide-01-intro/) | 프로젝트 소개, 주요 특징, 디자인 철학 |
-| 02 | [설치 및 시작](/ace-step-guide-02-installation/) | 플랫폼별 설치 방법, GPU 환경 설정 |
-| 03 | [아키텍처 분석](/ace-step-guide-03-architecture/) | DiT + LM 하이브리드 구조, Model Zoo |
-| 04 | [Gradio UI 사용법](/ace-step-guide-04-gradio-ui/) | 웹 인터페이스로 음악 생성 |
-| 05 | [REST API 가이드](/ace-step-guide-05-rest-api/) | API 서버 구축 및 프로그래밍 |
-| 06 | [음악 생성 전략](/ace-step-guide-06-generation-strategy/) | 프롬프트 작성, 메타데이터 제어 |
-| 07 | [고급 기능](/ace-step-guide-07-advanced-features/) | Cover, Repaint, Add Layer, Vocal2BGM |
-| 08 | [LoRA 훈련](/ace-step-guide-08-lora-training/) | 자신만의 스타일 학습 |
-| 09 | [GPU 최적화](/ace-step-guide-09-gpu-optimization/) | VRAM 관리, 모델 선택, 성능 튜닝 |
-| 10 | [결론 및 활용](/ace-step-guide-10-conclusion/) | 요약, 활용 시나리오, 다음 단계 |
+| 01 | [소개 및 개요](/blog-repo/ace-step-guide-01-intro/) | 프로젝트 소개, 주요 특징, 디자인 철학 |
+| 02 | [설치 및 시작](/blog-repo/ace-step-guide-02-installation/) | 플랫폼별 설치 방법, GPU 환경 설정 |
+| 03 | [아키텍처 분석](/blog-repo/ace-step-guide-03-architecture/) | DiT + LM 하이브리드 구조, Model Zoo |
+| 04 | [Gradio UI 사용법](/blog-repo/ace-step-guide-04-gradio-ui/) | 웹 인터페이스로 음악 생성 |
+| 05 | [REST API 가이드](/blog-repo/ace-step-guide-05-rest-api/) | API 서버 구축 및 프로그래밍 |
+| 06 | [음악 생성 전략](/blog-repo/ace-step-guide-06-generation-strategy/) | 프롬프트 작성, 메타데이터 제어 |
+| 07 | [고급 기능](/blog-repo/ace-step-guide-07-advanced-features/) | Cover, Repaint, Add Layer, Vocal2BGM |
+| 08 | [LoRA 훈련](/blog-repo/ace-step-guide-08-lora-training/) | 자신만의 스타일 학습 |
+| 09 | [GPU 최적화](/blog-repo/ace-step-guide-09-gpu-optimization/) | VRAM 관리, 모델 선택, 성능 튜닝 |
+| 10 | [결론 및 활용](/blog-repo/ace-step-guide-10-conclusion/) | 요약, 활용 시나리오, 다음 단계 |
 
 ---
 
