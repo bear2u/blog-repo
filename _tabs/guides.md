@@ -106,6 +106,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
   </div>
   <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
+    <h3><a href="/blog-repo/effgen-guide/">effGen</a></h3>
+    <p>Small Language Models을 강력한 AI 에이전트로 변환 (7챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/wrenai-guide/">WrenAI</a></h3>
     <p>자연어를 SQL로 변환하는 GenBI 플랫폼</p>
   </div>
