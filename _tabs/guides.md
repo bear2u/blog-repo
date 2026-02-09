@@ -188,6 +188,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">LLM 학습</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-llm">음성인식</span>
+    <h3><a href="/blog-repo/tiny-audio-guide/">Tiny Audio</a></h3>
+    <p>24시간/$12로 ASR 모델 훈련 - Frozen Encoder + Projector (6챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-llm">LLM</span>
     <h3><a href="/blog-repo/minimind-guide/">MiniMind</a></h3>
     <p>2시간 만에 LLM 훈련하기</p>
