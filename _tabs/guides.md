@@ -62,6 +62,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <div class="guide-grid">
   <div class="guide-card">
     <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/entire-cli-guide/">Entire CLI</a></h3>
+    <p>Git 워크플로우에 통합된 AI 에이전트 세션 자동 캡처 도구 (25챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
     <h3><a href="/blog-repo/oh-my-claudecode-guide/">oh-my-claudecode</a></h3>
     <p>Claude Code 멀티-에이전트 오케스트레이션 시스템 (5챕터)</p>
   </div>
