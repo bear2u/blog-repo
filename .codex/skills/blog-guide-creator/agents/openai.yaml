@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blog Guide Creator"
+  short_description: "GitHub 레포를 분석해 한국어 가이드 시리즈 생성"
+  default_prompt: "Use $blog-guide-creator to analyze a GitHub repo (or docs URL) and generate a Korean chaptered guide series in /home/blog."
