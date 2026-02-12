@@ -19,56 +19,56 @@ icon: fas fa-terminal
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 01 | [소개 및 개요](/entire-cli-guide-01-intro/) | Entire CLI란? 주요 특징, 사용 이유 |
-| 02 | [설치 및 시작하기](/entire-cli-guide-02-installation/) | 요구사항, 설치 방법, 빠른 시작 |
-| 03 | [핵심 개념](/entire-cli-guide-03-concepts/) | Session, Checkpoint, Strategy 이해 |
-| 04 | [일반적인 워크플로우](/entire-cli-guide-04-workflow/) | Enable → Work → Rewind → Resume |
-| 05 | [명령어 레퍼런스](/entire-cli-guide-05-commands/) | 전체 명령어 개요 및 상세 설명 |
+| 01 | [소개 및 개요](/blog-repo/entire-cli-guide-01-intro/) | Entire CLI란? 주요 특징, 사용 이유 |
+| 02 | [설치 및 시작하기](/blog-repo/entire-cli-guide-02-installation/) | 요구사항, 설치 방법, 빠른 시작 |
+| 03 | [핵심 개념](/blog-repo/entire-cli-guide-03-concepts/) | Session, Checkpoint, Strategy 이해 |
+| 04 | [일반적인 워크플로우](/blog-repo/entire-cli-guide-04-workflow/) | Enable → Work → Rewind → Resume |
+| 05 | [명령어 레퍼런스](/blog-repo/entire-cli-guide-05-commands/) | 전체 명령어 개요 및 상세 설명 |
 
 ### Strategy 시스템 (3챕터)
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 06 | [Strategy 개요](/entire-cli-guide-06-strategy-overview/) | Manual-commit vs Auto-commit 비교 |
-| 07 | [Manual-Commit Strategy](/entire-cli-guide-07-manual-commit/) | Shadow Branch 메커니즘, 기본 전략 |
-| 08 | [Auto-Commit Strategy](/entire-cli-guide-08-auto-commit/) | 자동 커밋 전략, 세밀한 체크포인트 |
+| 06 | [Strategy 개요](/blog-repo/entire-cli-guide-06-strategy-overview/) | Manual-commit vs Auto-commit 비교 |
+| 07 | [Manual-Commit Strategy](/blog-repo/entire-cli-guide-07-manual-commit/) | Shadow Branch 메커니즘, 기본 전략 |
+| 08 | [Auto-Commit Strategy](/blog-repo/entire-cli-guide-08-auto-commit/) | 자동 커밋 전략, 세밀한 체크포인트 |
 
 ### Session & Checkpoint (4챕터)
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 09 | [Session 관리](/entire-cli-guide-09-session-management/) | Session 생성, 추적, 조회 |
-| 10 | [Checkpoint 시스템](/entire-cli-guide-10-checkpoint-system/) | Temporary vs Committed Checkpoint |
-| 11 | [Checkpoint ID 연결](/entire-cli-guide-11-checkpoint-linking/) | 12-hex-char ID, Bidirectional Linking |
-| 12 | [Multi-Session 처리](/entire-cli-guide-12-multi-session/) | 동시 세션, Conflict 처리 |
+| 09 | [Session 관리](/blog-repo/entire-cli-guide-09-session-management/) | Session 생성, 추적, 조회 |
+| 10 | [Checkpoint 시스템](/blog-repo/entire-cli-guide-10-checkpoint-system/) | Temporary vs Committed Checkpoint |
+| 11 | [Checkpoint ID 연결](/blog-repo/entire-cli-guide-11-checkpoint-linking/) | 12-hex-char ID, Bidirectional Linking |
+| 12 | [Multi-Session 처리](/blog-repo/entire-cli-guide-12-multi-session/) | 동시 세션, Conflict 처리 |
 
 ### 아키텍처 상세 (5챕터)
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 13 | [Git 통합](/entire-cli-guide-13-git-integration/) | Git Hooks, Worktree 지원 |
-| 14 | [Storage 구조](/entire-cli-guide-14-storage-structure/) | Shadow Branch, Metadata Branch |
-| 15 | [Claude Code Hooks](/entire-cli-guide-15-claude-hooks/) | SessionStart, UserPromptSubmit, Stop |
-| 16 | [Subagent Tracking](/entire-cli-guide-16-subagent-tracking/) | Task, TodoWrite 체크포인트 |
-| 17 | [Logging 시스템](/entire-cli-guide-17-logging-system/) | 구조화된 로깅, 프라이버시 |
+| 13 | [Git 통합](/blog-repo/entire-cli-guide-13-git-integration/) | Git Hooks, Worktree 지원 |
+| 14 | [Storage 구조](/blog-repo/entire-cli-guide-14-storage-structure/) | Shadow Branch, Metadata Branch |
+| 15 | [Claude Code Hooks](/blog-repo/entire-cli-guide-15-claude-hooks/) | SessionStart, UserPromptSubmit, Stop |
+| 16 | [Subagent Tracking](/blog-repo/entire-cli-guide-16-subagent-tracking/) | Task, TodoWrite 체크포인트 |
+| 17 | [Logging 시스템](/blog-repo/entire-cli-guide-17-logging-system/) | 구조화된 로깅, 프라이버시 |
 
 ### 고급 기능 (4챕터)
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 18 | [Rewind 메커니즘](/entire-cli-guide-18-rewind-mechanism/) | 체크포인트로 되돌리기 |
-| 19 | [Resume 기능](/entire-cli-guide-19-resume-feature/) | 이전 세션 복원 |
-| 20 | [Auto-Summarization](/entire-cli-guide-20-auto-summarization/) | AI 기반 자동 요약 |
-| 21 | [Token Usage Tracking](/entire-cli-guide-21-token-tracking/) | 사용량 추적 및 분석 |
+| 18 | [Rewind 메커니즘](/blog-repo/entire-cli-guide-18-rewind-mechanism/) | 체크포인트로 되돌리기 |
+| 19 | [Resume 기능](/blog-repo/entire-cli-guide-19-resume-feature/) | 이전 세션 복원 |
+| 20 | [Auto-Summarization](/blog-repo/entire-cli-guide-20-auto-summarization/) | AI 기반 자동 요약 |
+| 21 | [Token Usage Tracking](/blog-repo/entire-cli-guide-21-token-tracking/) | 사용량 추적 및 분석 |
 
 ### 개발 및 확장 (4챕터)
 
 | # | 제목 | 내용 |
 |---|------|------|
-| 22 | [개발 환경 설정](/entire-cli-guide-22-development-setup/) | mise, Go, 테스트 실행 |
-| 23 | [코드 구조](/entire-cli-guide-23-code-structure/) | 패키지 구성, 주요 파일 |
-| 24 | [Agent 통합](/entire-cli-guide-24-agent-integration/) | Gemini CLI, 새 Agent 추가 |
-| 25 | [Contributing](/entire-cli-guide-25-contributing/) | 기여 가이드, 테스트, PR 프로세스 |
+| 22 | [개발 환경 설정](/blog-repo/entire-cli-guide-22-development-setup/) | mise, Go, 테스트 실행 |
+| 23 | [코드 구조](/blog-repo/entire-cli-guide-23-code-structure/) | 패키지 구성, 주요 파일 |
+| 24 | [Agent 통합](/blog-repo/entire-cli-guide-24-agent-integration/) | Gemini CLI, 새 Agent 추가 |
+| 25 | [Contributing](/blog-repo/entire-cli-guide-25-contributing/) | 기여 가이드, 테스트, PR 프로세스 |
 
 ---
 
@@ -299,7 +299,7 @@ Entire CLI는 오픈 소스 프로젝트입니다. 기여를 환영합니다!
 - [Pull Request](https://github.com/entireio/cli/pulls)
 - [Discussion](https://github.com/entireio/cli/discussions)
 
-자세한 내용은 [Contributing 가이드](/entire-cli-guide-25-contributing/)를 참조하세요.
+자세한 내용은 [Contributing 가이드](/blog-repo/entire-cli-guide-25-contributing/)를 참조하세요.
 
 ---
 
