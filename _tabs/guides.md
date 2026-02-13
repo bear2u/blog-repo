@@ -174,6 +174,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">모바일</span>
+    <h3><a href="/blog-repo/divine-mobile-guide/">diVine(OpenVine)</a></h3>
+    <p>Nostr 기반 Vine 스타일 Flutter 앱 divine-mobile 아키텍처/업로드/피드/배포 (12챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">개발 도구</span>
     <h3><a href="/blog-repo/maestro-guide/">Maestro</a></h3>
     <p>모바일 & 웹 UI 테스트 자동화 프레임워크</p>

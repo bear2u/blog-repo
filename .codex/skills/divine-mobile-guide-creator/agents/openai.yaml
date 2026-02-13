@@ -1,0 +1,4 @@
+interface:
+  display_name: "diVine Mobile Guide"
+  short_description: "divine-mobile 한국어 가이드 시리즈 생성"
+  default_prompt: "Use $divine-mobile-guide-creator to add a Korean chapter-style guide series for https://github.com/divinevideo/divine-mobile to this Jekyll blog."
