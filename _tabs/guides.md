@@ -62,6 +62,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <div class="guide-grid">
   <div class="guide-card">
     <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/gsd-guide/">GSD (Get Shit Done)</a></h3>
+    <p>Claude Code 컨텍스트 품질 저하 해결하는 메타 프롬프팅 시스템 (9챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
     <h3><a href="/blog-repo/entire-cli-guide/">Entire CLI</a></h3>
     <p>Git 워크플로우에 통합된 AI 에이전트 세션 자동 캡처 도구 (25챕터)</p>
   </div>
