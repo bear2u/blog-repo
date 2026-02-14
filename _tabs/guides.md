@@ -116,6 +116,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <div class="guide-grid">
   <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
+    <h3><a href="/blog-repo/explain-openclaw-guide/">Explain OpenClaw</a></h3>
+    <p>OpenClaw(구 Moltbot/Clawdbot) 운영/보안/배포 통합 지식베이스 (8챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/tambo-guide/">Tambo</a></h3>
     <p>React 앱에 생성형 UI 에이전트를 추가하는 오픈소스 툴킷 (9챕터)</p>
   </div>
