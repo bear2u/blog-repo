@@ -179,6 +179,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-llm">LLM</span>
+    <h3><a href="/blog-repo/clawrouter-guide/">ClawRouter</a></h3>
+    <p>OpenClaw용 로컬 LLM 라우터: x402(USDC)로 30+ 모델 요청을 자동 라우팅 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">모바일</span>
     <h3><a href="/blog-repo/divine-mobile-guide/">diVine(OpenVine)</a></h3>
     <p>Nostr 기반 Vine 스타일 Flutter 앱 divine-mobile 아키텍처/업로드/피드/배포 (12챕터)</p>
