@@ -130,6 +130,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">AI 에이전트</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-agent">RAG</span>
+    <h3><a href="/blog-repo/ultrarag-guide/">UltraRAG</a></h3>
+    <p>清华大学, NEUIR, OpenBMB가 만든 MCP 기반 경량 RAG 개발 프레임워크 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/picoclaw-guide/">PicoClaw</a></h3>
     <p>Go로 만든 초경량 개인 AI 어시스턴트: $10 하드웨어, 10MB 미만 RAM, 1초 부팅 목표 (10챕터)</p>
