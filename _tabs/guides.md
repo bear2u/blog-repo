@@ -194,6 +194,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">개발 도구</span>
+    <h3><a href="/blog-repo/gh-aw-guide/">GitHub Agentic Workflows (gh-aw)</a></h3>
+    <p>자연어 마크다운 워크플로우를 컴파일해 GitHub Actions에서 안전하게 실행하는 gh CLI 확장 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-llm">LLM</span>
     <h3><a href="/blog-repo/clawrouter-guide/">ClawRouter</a></h3>
     <p>OpenClaw용 로컬 LLM 라우터: x402(USDC)로 30+ 모델 요청을 자동 라우팅 (10챕터)</p>
