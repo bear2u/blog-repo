@@ -194,6 +194,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">모바일</span>
+    <h3><a href="/blog-repo/scrcpy-mobile-guide/">Scrcpy Remote (scrcpy-mobile)</a></h3>
+    <p>아이폰에서 Wi-Fi ADB로 Android 기기를 원격 제어하는 scrcpy 모바일 포팅 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">개발 도구</span>
     <h3><a href="/blog-repo/gh-aw-guide/">GitHub Agentic Workflows (gh-aw)</a></h3>
     <p>자연어 마크다운 워크플로우를 컴파일해 GitHub Actions에서 안전하게 실행하는 gh CLI 확장 (10챕터)</p>
