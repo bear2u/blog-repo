@@ -127,6 +127,9 @@ exclude:
   - "*.gemspec"
   - docs
   - tools
+  - goose
+  - tauri
+  - ACE-Step-1.5
   - README.md
   - LICENSE
   - "*.config.js"

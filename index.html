@@ -70,6 +70,31 @@ layout: page
   color: var(--text-muted-color, #6c757d);
   font-size: 1.1rem;
 }
+.section-title {
+  margin: 2.25rem 0 0.75rem 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+}
+.guide-toc {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.5rem 0.9rem;
+}
+.guide-link {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--card-border-color, #e9ecef);
+  border-radius: 0.45rem;
+  text-decoration: none;
+  color: var(--text-color);
+  background: rgba(0,0,0,0.02);
+}
+.guide-link:hover {
+  border-color: rgba(0,123,255,0.4);
+  background: rgba(0,123,255,0.06);
+  color: var(--link-color);
+}
 .hidden {
   display: none;
 }
@@ -79,6 +104,31 @@ layout: page
   <h1>최근 포스트</h1>
   <p>AI & 개발 관련 최신 가이드와 번역 콘텐츠</p>
 </div>
+
+{% assign clawrouter_guide = site.pages | where: "permalink", "/clawrouter-guide/" | first %}
+{% assign clawrouter_posts = site.posts | where_exp: "p", "p.url contains 'clawrouter-guide-'" | sort: "url" %}
+{% if clawrouter_guide or clawrouter_posts.size > 0 %}
+  <h2 class="section-title">ClawRouter 시리즈</h2>
+  <div class="post-card" style="margin: 0 0 1.5rem 0;">
+    <h3 style="margin-bottom: 0.25rem;">
+      <a href="{{ site.baseurl }}{% if clawrouter_guide %}{{ clawrouter_guide.url }}{% else %}/clawrouter-guide/{% endif %}">
+        ClawRouter 완벽 가이드 목차
+      </a>
+    </h3>
+    <div class="post-excerpt" style="margin-top: 0.5rem;">
+      OpenClaw용 로컬 LLM 라우터(로컬 라우팅 + x402 지갑 서명 결제) 시리즈를 한 번에 따라갈 수 있게 정리했습니다.
+    </div>
+    {% if clawrouter_posts.size > 0 %}
+    <div class="guide-toc">
+      {% for post in clawrouter_posts %}
+        <a class="guide-link" href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title | replace: "ClawRouter 완벽 가이드 ", "" }}
+        </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+{% endif %}
 
 <div class="post-grid" id="post-grid">
   {% for post in site.posts %}

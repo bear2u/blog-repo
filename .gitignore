@@ -7,3 +7,7 @@ vendor/
 Gemfile.lock
 *.gem
 .DS_Store
+.docker_can_write
+ACE-Step-1.5/
+goose/
+tauri/
