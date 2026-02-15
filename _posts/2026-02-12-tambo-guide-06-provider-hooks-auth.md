@@ -57,6 +57,7 @@ const { value, setValue, submit, isPending } = useTamboThreadInput();
 
 추가 컨텍스트(예: 선택 항목, 현재 페이지)와 추천 프롬프트 UI도 제공됩니다.
 
+{% raw %}
 ```tsx
 <TamboProvider
   userToken={userToken}
@@ -66,6 +67,7 @@ const { value, setValue, submit, isPending } = useTamboThreadInput();
   }}
 />
 ```
+{% endraw %}
 
 ```tsx
 const { suggestions, accept } = useTamboSuggestions({ maxSuggestions: 3 });

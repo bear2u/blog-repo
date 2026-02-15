@@ -5,7 +5,7 @@ date: 2026-02-07
 permalink: /tauri-guide-05-frontend-integration/
 author: Tauri Programme
 categories: [웹 개발, 데스크톱]
-tags: [Tauri, Frontend, TypeScript, React, Vue, @tauri-apps/api]
+tags: [Tauri, Frontend, TypeScript, React, Vue, "@tauri-apps/api"]
 original_url: "https://github.com/tauri-apps/tauri"
 excerpt: "@tauri-apps/api를 사용한 프론트엔드-백엔드 통신"
 ---
