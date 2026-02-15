@@ -131,6 +131,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <div class="guide-grid">
   <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
+    <h3><a href="/blog-repo/picoclaw-guide/">PicoClaw</a></h3>
+    <p>Go로 만든 초경량 개인 AI 어시스턴트: $10 하드웨어, 10MB 미만 RAM, 1초 부팅 목표 (10챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/explain-openclaw-guide/">Explain OpenClaw</a></h3>
     <p>OpenClaw(구 Moltbot/Clawdbot) 운영/보안/배포 통합 지식베이스 (8챕터)</p>
   </div>
