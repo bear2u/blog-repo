@@ -204,6 +204,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">개발 도구</span>
+    <h3><a href="/blog-repo/nautilus-trader-guide/">NautilusTrader</a></h3>
+    <p>Rust 코어 + Python API 기반 이벤트 구동 알고리즘 트레이딩 플랫폼 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">ベクターDB</span>
     <h3><a href="/blog-repo/zvec-guide/">zvec</a></h3>
     <p>Alibaba의 인프로세스 벡터 데이터베이스: 경량, 초고속, Proxima 기반 (7챕터)</p>
