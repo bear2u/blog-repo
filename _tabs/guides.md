@@ -273,6 +273,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">LLM 학습</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-llm">LLM</span>
+    <h3><a href="/blog-repo/mlx-llm-tutorial-guide/">MLX LLM Tutorial</a></h3>
+    <p>Apple Silicon에서 MLX로 LLM을 구현/학습/파인튜닝/웹 데모까지 따라가는 실습형 튜토리얼 분석 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-llm">음성인식</span>
     <h3><a href="/blog-repo/tiny-audio-guide/">Tiny Audio</a></h3>
     <p>24시간/$12로 ASR 모델 훈련 - Frozen Encoder + Projector (6챕터)</p>
