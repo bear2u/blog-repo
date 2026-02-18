@@ -209,6 +209,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">CLI</span>
+    <h3><a href="/blog-repo/summarize-guide/">Summarize</a></h3>
+    <p>Chrome/Firefox 사이드패널과 로컬 daemon을 결합한 URL·파일·미디어 요약 도구 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">개발 도구</span>
     <h3><a href="/blog-repo/nautilus-trader-guide/">NautilusTrader</a></h3>
     <p>Rust 코어 + Python API 기반 이벤트 구동 알고리즘 트레이딩 플랫폼 (10챕터)</p>
