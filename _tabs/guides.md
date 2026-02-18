@@ -130,6 +130,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">AI 에이전트</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-agent">AI 에이전트</span>
+    <h3><a href="/blog-repo/ai-agent-automation-guide/">AI Agent Automation</a></h3>
+    <p>로컬 우선 AI 워크플로우 실행 엔진: 워크플로우/태스크/스케줄/웹훅/인앱 어시스턴트까지 분석 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-agent">RAG</span>
     <h3><a href="/blog-repo/ultrarag-guide/">UltraRAG</a></h3>
     <p>清华大学, NEUIR, OpenBMB가 만든 MCP 기반 경량 RAG 개발 프레임워크 (10챕터)</p>
