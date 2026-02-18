@@ -209,6 +209,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-tool">웹 스크래핑</span>
+    <h3><a href="/blog-repo/llm-reader-guide/">LLM Reader</a></h3>
+    <p>웹페이지 HTML을 LLM 입력 텍스트로 정규화해 링크/이미지/표 추출 정확도를 높이는 Python 전처리 라이브러리 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-tool">CLI</span>
     <h3><a href="/blog-repo/summarize-guide/">Summarize</a></h3>
     <p>Chrome/Firefox 사이드패널과 로컬 daemon을 결합한 URL·파일·미디어 요약 도구 (10챕터)</p>
