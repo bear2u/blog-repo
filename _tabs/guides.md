@@ -62,6 +62,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <div class="guide-grid">
   <div class="guide-card">
     <span class="badge badge-coding">AI 코딩</span>
+    <h3><a href="/blog-repo/oh-my-codex-guide/">oh-my-codex (OMX)</a></h3>
+    <p>OpenAI Codex CLI용 멀티-에이전트 오케스트레이션: 팀 모드, 훅 플러그인, MCP 상태/메모리 서버 통합 (10챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-coding">AI 코딩</span>
     <h3><a href="/blog-repo/cline-guide/">Cline</a></h3>
     <p>IDE 안에서 Plan/Act로 코드를 수정하고, 승인 기반으로 터미널/브라우저/MCP까지 사용하는 오픈소스 코딩 에이전트 (10챕터)</p>
   </div>
