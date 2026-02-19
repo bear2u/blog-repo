@@ -298,6 +298,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">LLM 학습</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-llm">코드 해설</span>
+    <h3><a href="/blog-repo/microgpt-guide/">microgpt.py</a></h3>
+    <p>Andrej Karpathy의 199줄 순수 Python GPT 구현을 데이터/오토그라드/어텐션/학습/추론까지 줄 단위로 해설 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-llm">LLM</span>
     <h3><a href="/blog-repo/mlx-llm-tutorial-guide/">MLX LLM Tutorial</a></h3>
     <p>Apple Silicon에서 MLX로 LLM을 구현/학습/파인튜닝/웹 데모까지 따라가는 실습형 튜토리얼 분석 (10챕터)</p>
