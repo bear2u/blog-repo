@@ -135,6 +135,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 <h2 class="section-title">AI 에이전트</h2>
 <div class="guide-grid">
   <div class="guide-card">
+    <span class="badge badge-agent">보안</span>
+    <h3><a href="/blog-repo/pentagi-guide/">PentAGI</a></h3>
+    <p>Docker 샌드박스에서 멀티 에이전트로 보안 테스트를 자동화: LLM Provider/검색/관측성/Graphiti 지식 그래프까지 운영 관점으로 정리 (10챕터)</p>
+  </div>
+  <div class="guide-card">
     <span class="badge badge-agent">AI 에이전트</span>
     <h3><a href="/blog-repo/ai-agent-automation-guide/">AI Agent Automation</a></h3>
     <p>로컬 우선 AI 워크플로우 실행 엔진: 워크플로우/태스크/스케줄/웹훅/인앱 어시스턴트까지 분석 (10챕터)</p>
@@ -213,6 +218,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 
 <h2 class="section-title">개발 도구</h2>
 <div class="guide-grid">
+  <div class="guide-card">
+    <span class="badge badge-tool">CLI</span>
+    <h3><a href="/blog-repo/flutter-blueprint-guide/">flutter_blueprint</a></h3>
+    <p>프로덕션급 Flutter 앱 스캐폴딩 CLI의 생성 파이프라인, 템플릿 구조, 보안/품질 운영 전략 분석 (10챕터)</p>
+  </div>
   <div class="guide-card">
     <span class="badge badge-tool">플랫폼</span>
     <h3><a href="/blog-repo/open-mercato-guide/">Open Mercato</a></h3>
@@ -297,6 +307,11 @@ AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리�
 
 <h2 class="section-title">LLM 학습</h2>
 <div class="guide-grid">
+  <div class="guide-card">
+    <span class="badge badge-llm">프롬프트</span>
+    <h3><a href="/blog-repo/prompt-engineering-guide/">Prompt Engineering Guide</a></h3>
+    <p>dair-ai 공식 프롬프트 엔지니어링 지식베이스를 기초/고급기법/신뢰성/보안/컨텍스트 엔지니어링까지 실무 관점으로 정리 (10챕터)</p>
+  </div>
   <div class="guide-card">
     <span class="badge badge-llm">코드 해설</span>
     <h3><a href="/blog-repo/microgpt-guide/">microgpt.py</a></h3>
