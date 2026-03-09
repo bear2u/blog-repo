@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Trends
+title: Trend
 permalink: /trends/
 icon: fas fa-chart-line
 order: 2
 ---
 
-# Trends
+# Trend
 
 자동으로 수집/등록된 트렌드 스냅샷을 모아봅니다.
 
@@ -28,4 +28,3 @@ order: 2
   {% endfor %}
 </ul>
 {% endif %}
-
