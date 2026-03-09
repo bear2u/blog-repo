@@ -161,18 +161,7 @@ def _find_blog_root(start: pathlib.Path) -> pathlib.Path:
 
 
 def _snapshot_hash(items: list[TrendingRepo], since: str) -> str:
-    payload = {
-        "since": since,
-        "repos": [
-            {
-                "full_name": it.full_name,
-                "stars_delta": it.stars_delta,
-                "total_stars": it.total_stars,
-                "language": it.language,
-            }
-            for it in items
-        ],
-    }
+    payload = {"since": since, "repos": [it.full_name for it in items]}
     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":"), sort_keys=True).encode("utf-8")
     return hashlib.sha256(raw).hexdigest()[:12]
 
