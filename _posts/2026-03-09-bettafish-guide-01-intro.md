@@ -1,0 +1,33 @@
+---
+layout: post
+title: "BettaFish 완벽 가이드 (01) - 소개 및 개요"
+date: 2026-03-09
+permalink: /bettafish-guide-01-intro/
+author: 666ghj
+categories: [개발 도구, BettaFish]
+tags: [BettaFish, Python, GitHub Trending]
+original_url: "https://github.com/666ghj/BettaFish"
+excerpt: "BettaFish 프로젝트 소개와 핵심 포인트"
+---
+
+## BettaFish란?
+
+GitHub Trending 기준으로 주목받는 **666ghj/BettaFish**를 한국어로 정리합니다.
+
+- **한 줄 요약**: 微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。
+- **언어**: Python
+- **오늘 스타**: +509
+- **원본**: https://github.com/666ghj/BettaFish
+
+---
+
+## 이 가이드에서 다룰 것
+
+- 설치/실행 빠른 시작
+- 핵심 개념/구성요소
+- 자주 쓰는 사용 패턴
+- 운영/확장 시 체크리스트
+
+---
+
+*다음 글에서는 설치 및 빠른 시작을 정리합니다.*
