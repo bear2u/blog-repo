@@ -10,6 +10,7 @@ import json
 import pathlib
 import re
 import signal
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -259,6 +260,25 @@ def _render_console(items: list[TrendingRepo], since: str, generated_at_utc: dt.
     return "\n".join(lines)
 
 
+def _run_git(blog_root: pathlib.Path, args: list[str], timeout_s: float) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        ["git", "-C", str(blog_root), *args],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        timeout=timeout_s,
+        check=False,
+    )
+
+
+def _current_branch(blog_root: pathlib.Path, timeout_s: float) -> str | None:
+    res = _run_git(blog_root, ["branch", "--show-current"], timeout_s=timeout_s)
+    if res.returncode != 0:
+        return None
+    name = (res.stdout or "").strip()
+    return name or None
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(
         description="Job #4 helper: fetch GitHub Trending top N and auto-register a Jekyll post without duplicates."
@@ -276,6 +296,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--force", action="store_true", help="Write even if snapshot is unchanged.")
     parser.add_argument("--json", action="store_true", help="Output JSON instead of Markdown.")
     parser.add_argument("--blog-root", default="", help="Optional blog root path (must contain _posts/).")
+    parser.add_argument("--commit", action="store_true", help="Commit the updated post file.")
+    parser.add_argument("--push", action="store_true", help="Push after committing (implies --commit).")
+    parser.add_argument("--remote", default="origin", help="Git remote name to push (default: origin).")
+    parser.add_argument("--branch", default="", help="Git branch to push (default: current branch).")
+    parser.add_argument("--git-timeout", type=float, default=60.0, help="Timeout for each git command in seconds.")
     args = parser.parse_args(argv)
 
     max_items = max(1, int(args.max))
@@ -356,6 +381,41 @@ def main(argv: list[str]) -> int:
         md = _render_post(date_str=date_str, since=since, items=items, generated_at_utc=generated_at_utc)
         post_path.write_text(md, encoding="utf-8")
         sys.stdout.write(f"WROTE: {post_path}\n")
+
+        do_commit = bool(args.commit or args.push)
+        if not do_commit:
+            return 0
+
+        git_timeout_s = float(args.git_timeout)
+        rel_post = str(post_path.relative_to(blog_root))
+
+        add_res = _run_git(blog_root, ["add", "--", rel_post], timeout_s=git_timeout_s)
+        if add_res.returncode != 0:
+            sys.stderr.write(f"ERROR: git add failed:\n{add_res.stdout}\n")
+            return 2
+
+        msg = f"Update GitHub Trending ({since}) {date_str}"
+        commit_res = _run_git(blog_root, ["commit", "-m", msg], timeout_s=git_timeout_s)
+        if commit_res.returncode != 0:
+            out = (commit_res.stdout or "").lower()
+            if "nothing to commit" not in out and "no changes added" not in out:
+                sys.stderr.write(f"ERROR: git commit failed:\n{commit_res.stdout}\n")
+                return 2
+            sys.stdout.write("SKIP: nothing to commit\n")
+            return 0
+
+        sys.stdout.write("OK: committed\n")
+
+        if not args.push:
+            return 0
+
+        branch = (args.branch or "").strip() or _current_branch(blog_root, timeout_s=git_timeout_s) or "main"
+        push_res = _run_git(blog_root, ["push", str(args.remote), branch], timeout_s=git_timeout_s)
+        if push_res.returncode != 0:
+            sys.stderr.write(f"ERROR: git push failed:\n{push_res.stdout}\n")
+            return 2
+
+        sys.stdout.write("OK: pushed\n")
         return 0
     except TimeoutError as e:
         sys.stderr.write(f"ERROR: {e}\n")
