@@ -47,13 +47,10 @@ description: |
 git clone [프로젝트 주소]
 ```
 
-2) 분석 단계에서 아래 지시를 기준으로 문서 구조를 설계한다.
+2) 분석/문서 생성은 "코드베이스 기반 위키 작성 프롬프트"를 기준으로 한다.
 
-```text
-해당 레포지토리의 위키를 만들어줘.
-옵시디언 문법으로 각 체계를 연결하도록 하고, 확장가능성이 있어야 해.
-문서관리 도구를 만들어서 점검하는 자동화 체계도 만들고.
-```
+- 기본 프롬프트 파일: `references/wiki-generation-prompt.md`
+- 핵심 요구: **추측 금지**, **근거(파일/클래스/함수/설정 키) 제시**, **Mermaid 필수**, **실무형(명령어/경로/주의사항)**
 
 3) 위키를 읽으면서 설명이 필요한 부분은 Mermaid 도표를 만든다.
 
@@ -61,6 +58,12 @@ git clone [프로젝트 주소]
 - 데이터/이벤트 흐름
 - 실행 파이프라인
 - 상태 전이(있을 경우)
+
+## 문서 생성 프롬프트(기본)
+
+- 파일: `references/wiki-generation-prompt.md`
+- 사용법: 레포 분석 결과(파일/경로/코드 스니펫 근거)와 함께 위 파일 내용을 "그대로" 베이스 프롬프트로 사용한다.
+- v2 출력 매핑: 프롬프트의 `wiki/*.md` 파일 단위 산출물은, 이 블로그에서는 **위키 노드(챕터 포스트)** 단위로 쪼개어 `_posts/`에 저장한다.
 
 ## 워크플로우
 
@@ -133,11 +136,15 @@ find . -maxdepth 3 -name "*.md" | head -50
 
 문서 본문 규칙(v2):
 
+- **추측(가정) 금지**: 근거를 못 찾으면 "확인 필요"로 표시
+- 각 챕터에 최소 포함 섹션:
+  - "이 문서의 목적", "빠른 요약", "근거(파일/경로)", "주의사항/함정", "TODO/확인 필요"
+- 핵심 흐름/아키텍처는 Mermaid로 시각화(가능한 범위에서):
+  - Context / Component(or Container) / Sequence / (가능하면) Deployment(or Runtime Topology)
 - 각 챕터에 `## 위키 링크` 섹션을 넣고 관련 노드를 연결
 - Obsidian 문법 + URL 병기
   - 예: `[[Project Guide - Architecture]]`
   - 예: `[Architecture](/blog-repo/{series}-guide-03-architecture/)`
-- 설명이 필요한 섹션마다 Mermaid 다이어그램을 우선 제공
 - "문서관리/점검 자동화" 챕터에는 체크리스트 + 자동화 스크립트(예시) + 확장 포인트 포함
 
 ### 6) guides 탭 카드 업데이트
@@ -164,14 +171,14 @@ bundle exec jekyll build
 rm -rf "$SCRATCH"
 ```
 
-## Git 작업(필수)
+## Git 작업
 
-기본 동작은 **항상** `commit` 후 `push`까지 완료한다.
-사용자가 명시적으로 "push는 하지 마"라고 한 경우에만 생략한다.
+- 기본: `git add` / `commit`까지 수행
+- `push`는 사용자가 명시적으로 요청한 경우에만 수행
 
 ```bash
 cd /home/blog
 git add _posts/{date}-{series}-guide-*.md {series}-guide.md _tabs/guides.md
 git commit -m "{PROJECT_NAME} 위키형 가이드 시리즈 추가"
-git push
+# git push
 ```
