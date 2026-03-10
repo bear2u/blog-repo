@@ -1,0 +1,72 @@
+{
+  "series": "notebooklm-py",
+  "repo_url": "https://github.com/teng-lin/notebooklm-py",
+  "project_name": "notebooklm-py",
+  "author": "Teng Lin",
+  "section": "개발 도구",
+  "status": "finalized",
+  "scratch_dir": null,
+  "chapters": [
+    {
+      "num": "01",
+      "slug": "intro",
+      "title": "소개 및 범위",
+      "status": "done"
+    },
+    {
+      "num": "02",
+      "slug": "install-auth",
+      "title": "설치와 인증",
+      "status": "done"
+    },
+    {
+      "num": "03",
+      "slug": "architecture",
+      "title": "아키텍처와 호출 계층",
+      "status": "done"
+    },
+    {
+      "num": "04",
+      "slug": "cli-python-api",
+      "title": "CLI와 Python API",
+      "status": "done"
+    },
+    {
+      "num": "05",
+      "slug": "sources-research-chat",
+      "title": "소스, 리서치, 채팅",
+      "status": "done"
+    },
+    {
+      "num": "06",
+      "slug": "artifacts-downloads",
+      "title": "생성물과 다운로드",
+      "status": "done"
+    },
+    {
+      "num": "07",
+      "slug": "testing-ci-security",
+      "title": "테스트, CI, 보안, 운영",
+      "status": "done"
+    },
+    {
+      "num": "08",
+      "slug": "doc-automation-troubleshooting",
+      "title": "문서 점검 자동화와 트러블슈팅",
+      "status": "done"
+    }
+  ],
+  "completed_files": [
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-01-intro.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-02-install-auth.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-03-architecture.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-04-cli-python-api.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-05-sources-research-chat.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-06-artifacts-downloads.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-07-testing-ci-security.md",
+    "/home/blog/_posts/2026-03-10-notebooklm-py-guide-08-doc-automation-troubleshooting.md",
+    "/home/blog/notebooklm-py-guide.md"
+  ],
+  "next_batch": [],
+  "last_updated": "2026-03-10"
+}

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Blog Guide Creator"
-  short_description: "GitHub 레포를 분석해 한국어 가이드 시리즈 생성"
-  default_prompt: "Use $blog-guide-creator to analyze a GitHub repo (or docs URL) and generate a Korean chaptered guide series in /home/blog."
+  display_name: "Blog Guide Creator v2"
+  short_description: "GitHub 레포를 분석해 한국어 위키형 가이드를 단계적으로 생성"
+  default_prompt: "Use $blog-guide-creator-v2 to analyze a GitHub repo or docs URL and build a Korean wiki-style guide series in /home/blog through phased, resumable turns. Save checkpoint state under /home/blog/.codex/state/blog-guide-creator-v2, generate only a small batch of chapters per turn, report progress at the end of each turn, and resume from the existing state on the next turn instead of restarting."
