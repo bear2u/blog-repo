@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-05-best-practices/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Operations, Logging, Docker, Zep, LLM]
+tags: [Trending, GitHub, MiroFish, Operations, Logging, Docker, Zep, LLM]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: "백엔드 상태 파일/로그/프로세스(시뮬레이션) 관점에서 운영 체크리스트와 튜닝 포인트를 정리합니다."
 ---

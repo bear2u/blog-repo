@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-02-installation/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Setup, Node.js, Python, uv, Docker]
+tags: [Trending, GitHub, MiroFish, Setup, Node.js, Python, uv, Docker]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: ".env 구성 → 의존성 설치 → 프론트/백엔드 동시 실행까지, README와 스크립트 근거로 정리합니다."
 ---

@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /hermes-agent-guide-01-intro/
 author: NousResearch
 categories: [개발 도구, hermes-agent]
-tags: [hermes-agent, Python, GitHub Trending]
+tags: [Trending, GitHub, hermes-agent, Python, GitHub Trending]
 original_url: "https://github.com/NousResearch/hermes-agent"
 excerpt: "hermes-agent 프로젝트 소개와 핵심 포인트"
 ---

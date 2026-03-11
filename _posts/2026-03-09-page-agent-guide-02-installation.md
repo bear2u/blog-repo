@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /page-agent-guide-02-installation/
 author: alibaba
 categories: [개발 도구, page-agent]
-tags: [page-agent, TypeScript, GitHub Trending]
+tags: [Trending, GitHub, page-agent, TypeScript, GitHub Trending]
 original_url: "https://github.com/alibaba/page-agent"
 excerpt: "page-agent 설치와 빠른 시작"
 ---

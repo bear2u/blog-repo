@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /page-agent-guide-05-best-practices/
 author: alibaba
 categories: [개발 도구, page-agent]
-tags: [page-agent, TypeScript, GitHub Trending]
+tags: [Trending, GitHub, page-agent, TypeScript, GitHub Trending]
 original_url: "https://github.com/alibaba/page-agent"
 excerpt: "page-agent 운영/확장 베스트 프랙티스"
 ---

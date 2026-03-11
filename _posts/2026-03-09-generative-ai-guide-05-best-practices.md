@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /generative-ai-guide-05-best-practices/
 author: Google Cloud
 categories: [LLM 학습, Google Cloud Generative AI]
-tags: [Google Cloud Generative AI, Jupyter Notebook, GitHub Trending]
+tags: [Trending, GitHub, generative-ai, Google Cloud Generative AI, Jupyter Notebook, GitHub Trending]
 original_url: "https://github.com/GoogleCloudPlatform/generative-ai"
 excerpt: "Google Cloud Generative AI 운영/확장 베스트 프랙티스"
 ---

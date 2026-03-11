@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-06-doc-automation/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Documentation, Automation, Checklist]
+tags: [Trending, GitHub, MiroFish, Documentation, Automation, Checklist]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: "가이드/온보딩 문서가 코드 변경에 뒤처지지 않도록, ‘깨지기 쉬운 계약(계약=routes/env/경로)’을 자동 점검하는 방법."
 ---

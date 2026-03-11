@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /nanochat-guide-02-installation/
 author: karpathy
 categories: [개발 도구, nanochat]
-tags: [nanochat, Python, GitHub Trending]
+tags: [Trending, GitHub, nanochat, Python, GitHub Trending]
 original_url: "https://github.com/karpathy/nanochat"
 excerpt: "nanochat 설치와 빠른 시작"
 ---

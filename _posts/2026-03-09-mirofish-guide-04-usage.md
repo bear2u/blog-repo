@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-04-usage/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Workflow, API, Graph, Simulation, Report]
+tags: [Trending, GitHub, MiroFish, Workflow, API, Graph, Simulation, Report]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: "문서 업로드→본체→그래프→시뮬레이션→리포트까지, UI/HTTP API 기준의 ‘한 번 돌려보기’ 체크리스트."
 ---

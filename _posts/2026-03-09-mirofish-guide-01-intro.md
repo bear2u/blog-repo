@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-01-intro/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Multi-Agent, Simulation, Flask, Vue, Zep]
+tags: [Trending, GitHub, MiroFish, Multi-Agent, Simulation, Flask, Vue, Zep]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: "MiroFish의 문제 정의(입력→그래프→시뮬레이션→리포트)와 저장소 지도를 근거 기반으로 정리합니다."
 ---

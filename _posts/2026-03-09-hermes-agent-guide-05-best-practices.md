@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /hermes-agent-guide-05-best-practices/
 author: NousResearch
 categories: [개발 도구, hermes-agent]
-tags: [hermes-agent, Python, GitHub Trending]
+tags: [Trending, GitHub, hermes-agent, Python, GitHub Trending]
 original_url: "https://github.com/NousResearch/hermes-agent"
 excerpt: "hermes-agent 운영/확장 베스트 프랙티스"
 ---

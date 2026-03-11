@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /agency-agents-guide-02-installation/
 author: msitarzewski
 categories: [개발 도구, agency-agents]
-tags: [agency-agents, Shell, GitHub Trending]
+tags: [Trending, GitHub, agency-agents, Shell, GitHub Trending]
 original_url: "https://github.com/msitarzewski/agency-agents"
 excerpt: "agency-agents 설치와 빠른 시작"
 ---

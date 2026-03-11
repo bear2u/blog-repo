@@ -5,7 +5,7 @@ date: 2026-03-10
 permalink: /mirofish-guide-03-architecture/
 author: 666ghj
 categories: [AI 에이전트, MiroFish]
-tags: [MiroFish, Architecture, Flask, Vue, Zep, LLM]
+tags: [Trending, GitHub, MiroFish, Architecture, Flask, Vue, Zep, LLM]
 original_url: "https://github.com/666ghj/MiroFish"
 excerpt: "Frontend(Vue) ↔ Backend(Flask) ↔ Zep/LLM 연동과, 그래프→시뮬레이션→리포트 흐름을 Mermaid로 시각화합니다."
 ---

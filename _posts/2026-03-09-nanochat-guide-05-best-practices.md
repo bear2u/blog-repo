@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /nanochat-guide-05-best-practices/
 author: karpathy
 categories: [개발 도구, nanochat]
-tags: [nanochat, Python, GitHub Trending]
+tags: [Trending, GitHub, nanochat, Python, GitHub Trending]
 original_url: "https://github.com/karpathy/nanochat"
 excerpt: "nanochat 운영/확장 베스트 프랙티스"
 ---

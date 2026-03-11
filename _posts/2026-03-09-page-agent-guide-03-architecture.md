@@ -5,7 +5,7 @@ date: 2026-03-09
 permalink: /page-agent-guide-03-architecture/
 author: alibaba
 categories: [개발 도구, page-agent]
-tags: [page-agent, TypeScript, GitHub Trending]
+tags: [Trending, GitHub, page-agent, TypeScript, GitHub Trending]
 original_url: "https://github.com/alibaba/page-agent"
 excerpt: "page-agent의 핵심 개념과 구조"
 ---
