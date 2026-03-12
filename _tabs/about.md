@@ -2,7 +2,7 @@
 layout: page
 title: About
 icon: fas fa-info-circle
-order: 6
+order: 7
 ---
 
 # Tech Blog

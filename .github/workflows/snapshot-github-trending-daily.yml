@@ -1,0 +1,38 @@
+name: Snapshot GitHub Trending (Daily)
+
+on:
+  schedule:
+    # 00:15 UTC every day (GitHub Actions schedule is UTC)
+    - cron: "15 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "snapshot-github-trending-daily"
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch + write + commit + push
+        run: |
+          python3 automation/github_trending_to_blog.py \
+            --since daily \
+            --max 10 \
+            --write \
+            --commit \
+            --push
+
