@@ -10,6 +10,12 @@ Gemfile.lock
 .docker_can_write
 __pycache__/
 *.pyc
+
+# Codex scratch/state (keep local, don't commit)
+.codex/state/
+.codex/test.txt
+.codex/skills/korea-news-agent/
+tmpfile.txt
 ACE-Step-1.5/
 goose/
 tauri/
