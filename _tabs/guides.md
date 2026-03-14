@@ -58,6 +58,25 @@ order: 1
 
 AI & 개발 관련 해외 콘텐츠를 한국어로 번역한 가이드 시리즈입니다.
 
+<h2 class="section-title">GitHub Trending (2026-03-14)</h2>
+<div class="guide-grid">
+  <div class="guide-card">
+    <span class="badge badge-agent">Context DB</span>
+    <h3><a href="/blog-repo/openviking-guide/">OpenViking</a></h3>
+    <p>AI 에이전트용 Context Database: filesystem paradigm, L0/L1/L2 로딩, 서버/CLI/예제(MCP/플러그인)까지 위키형 정리 (5챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-agent">로보틱스</span>
+    <h3><a href="/blog-repo/dimos-guide/">dimos (Dimensional OS)</a></h3>
+    <p>Physical Space를 위한 agentive OS/SDK: 설치/첫 실행(리플레이/시뮬), 모듈 지도(core/robot/control), CLI/MCP까지 정리 (5챕터)</p>
+  </div>
+  <div class="guide-card">
+    <span class="badge badge-llm">AI 안전</span>
+    <h3><a href="/blog-repo/heretic-guide/">Heretic (연구/보안 관점)</a></h3>
+    <p>LLM 안전 정렬 약화/오남용 위험이 큰 도구를 “아키텍처/재현성/방어” 관점으로만 정리 (5챕터)</p>
+  </div>
+</div>
+
 <h2 class="section-title">AI 코딩 에이전트</h2>
 <div class="guide-grid">
   <div class="guide-card">
