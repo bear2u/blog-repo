@@ -8,7 +8,7 @@ categories: [개발 트렌드, GitHub]
 tags: [GitHub, Trending, DevTrends]
 original_url: "https://github.com/trending?since=daily"
 snapshot_hash: "baf604d00f4c"
-excerpt: "2026-03-14 기준 GitHub Trending(daily) 상위 레포지토리 10개를 빠르게 요약합니다."
+excerpt: "2026-03-14 기준 GitHub Trending(daily) 상위 레포지토리 10개를 빠르게 요약하고, 이미 발행된 가이드 시리즈로 연결합니다."
 ---
 
 ## 스냅샷
@@ -19,15 +19,15 @@ excerpt: "2026-03-14 기준 GitHub Trending(daily) 상위 레포지토리 10개�
 
 ## 한 눈에 보기
 
-| Rank | Repo | Stars today | Total stars | Lang | 한 줄 요약 |
-| ---: | --- | ---: | ---: | --- | --- |
-| 1 | [microsoft/BitNet](https://github.com/microsoft/BitNet) | +2227 | 33956 | Python | Official inference framework for 1-bit LLMs |
-| 2 | [langflow-ai/openrag](https://github.com/langflow-ai/openrag) | +905 | 2246 | Python | OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch. |
-| 3 | [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | +2093 | 15426 | Zig | Lightpanda: the headless browser designed for AI and automation |
-| 4 | [obra/superpowers](https://github.com/obra/superpowers) | +2106 | 81908 | Shell | An agentic skills framework & software development methodology that works. |
-| 5 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | +892 | 409457 | Python | A collective list of free APIs |
-| 6 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | +1668 | 15262 | TypeScript | Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration. |
-| 7 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | +5745 | 40055 | Shell | A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. |
-| 8 | [dolthub/dolt](https://github.com/dolthub/dolt) | +60 | 21066 | Go | Dolt – Git for Data |
-| 9 | [google/A2UI](https://github.com/google/A2UI) | +635 | 13050 | TypeScript | - |
-| 10 | [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | +559 | 26864 | Python | SOTA Open Source TTS |
+| Rank | Repo | Stars today | Total stars | Lang | 가이드 | 한 줄 요약 |
+| ---: | --- | ---: | ---: | --- | --- | --- |
+| 1 | [microsoft/BitNet](https://github.com/microsoft/BitNet) | +2227 | 33956 | Python | [가이드](/bitnet-guide-01-intro/) | Official inference framework for 1-bit LLMs |
+| 2 | [langflow-ai/openrag](https://github.com/langflow-ai/openrag) | +905 | 2246 | Python | [가이드](/openrag-guide-01-intro/) | OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch. |
+| 3 | [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | +2093 | 15426 | Zig | [가이드](/lightpanda-browser-guide-01-intro-and-wiki-map/) | Lightpanda: the headless browser designed for AI and automation |
+| 4 | [obra/superpowers](https://github.com/obra/superpowers) | +2106 | 81908 | Shell | [가이드](/superpowers-guide-01-intro/) | An agentic skills framework & software development methodology that works. |
+| 5 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | +892 | 409457 | Python | [가이드](/public-apis-guide-01-intro-and-wiki-map/) | A collective list of free APIs |
+| 6 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | +1668 | 15262 | TypeScript | [가이드](/promptfoo-guide-01-intro/) | Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration. |
+| 7 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | +5745 | 40055 | Shell | [가이드](/agency-agents-guide-01-intro/) | A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. |
+| 8 | [dolthub/dolt](https://github.com/dolthub/dolt) | +60 | 21066 | Go | [가이드](/dolt-guide-01-intro-and-wiki-map/) | Dolt – Git for Data |
+| 9 | [google/A2UI](https://github.com/google/A2UI) | +635 | 13050 | TypeScript | [가이드](/a2ui-guide-01-intro-and-wiki-map/) | - |
+| 10 | [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | +559 | 26864 | Python | [가이드](/fish-speech-guide-01-intro/) | SOTA Open Source TTS |
