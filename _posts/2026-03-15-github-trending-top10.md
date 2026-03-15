@@ -20,20 +20,25 @@ excerpt: "2026-03-15 기준 GitHub Trending(daily) 상위 10개 저장소를 조
 
 ## Top 10 저장소 + 블로그 등록 상태
 
-1. `volcengine/OpenViking` → [가이드](/blog-repo/openviking-guide/)
-2. `anthropics/claude-plugins-official` → [가이드](/blog-repo/claude-plugins-official-guide/)
-3. `dimensionalOS/dimos` → [가이드](/blog-repo/dimos-guide/)
-4. `p-e-w/heretic` → [가이드(연구/보안 관점)](/blog-repo/heretic-guide/)
-5. `langflow-ai/openrag` → [가이드](/blog-repo/openrag-guide/)
-6. `lightpanda-io/browser` → [가이드](/blog-repo/lightpanda-browser-guide/)
-7. `msitarzewski/agency-agents` → [가이드](/blog-repo/agency-agents-guide/)
-8. `fishaudio/fish-speech` → [가이드](/blog-repo/fish-speech-guide/)
-9. `InsForge/InsForge` → [가이드](/blog-repo/insforge-guide/)
-10. `obra/superpowers` → [가이드](/blog-repo/superpowers-guide/)
+1. `lightpanda-io/browser` → [가이드](/blog-repo/lightpanda-browser-guide/)
+2. `Crosstalk-Solutions/project-nomad` → [가이드](/blog-repo/project-nomad-guide/)
+3. `volcengine/OpenViking` → [가이드](/blog-repo/openviking-guide/)
+4. `shareAI-lab/learn-claude-code` → [가이드](/blog-repo/learn-claude-code-guide/)
+5. `shanraisshan/claude-code-best-practice` → [가이드](/blog-repo/claude-code-best-practice-guide/)
+6. `obra/superpowers` → [가이드](/blog-repo/superpowers-guide/)
+7. `p-e-w/heretic` → [가이드(연구/보안 관점)](/blog-repo/heretic-guide/)
+8. `666ghj/MiroFish` → [가이드](/blog-repo/mirofish-guide/)
+9. `abhigyanpatwari/GitNexus` → [가이드](/blog-repo/gitnexus-guide/)
+10. `topoteretes/cognee` → [가이드](/blog-repo/cognee-guide/)
 
 ---
 
 ## 이번 작업에서 새로 추가된 시리즈
 
-- 없음 (Top 10 모두 기존 가이드 시리즈가 `_posts/`에 이미 등록되어 있었습니다.)
-
+- 신규 5챕터 시리즈:
+  - `project-nomad` (Project N.O.M.A.D.)
+  - `learn-claude-code` (Learn Claude Code)
+  - `gitnexus` (GitNexus)
+  - `cognee` (Cognee)
+- 기존 시리즈 보강:
+  - `claude-code-best-practice` → 01만 있던 상태에서 02~05 챕터 추가로 “전체 시리즈(5챕터)” 완성
