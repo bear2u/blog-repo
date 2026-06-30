@@ -1,0 +1,33 @@
+---
+layout: post
+title: "GitHub Trending 요약 (2026-06-30)"
+date: 2026-06-30
+permalink: /github-trending-2026-06-30/
+author: GitHub Trending
+categories: [개발 트렌드, GitHub]
+tags: [GitHub, Trending, DevTrends]
+original_url: "https://github.com/trending?since=daily"
+snapshot_hash: "6499f5f71873"
+excerpt: "2026-06-30 기준 GitHub Trending(daily) 상위 레포지토리 10개를 빠르게 요약합니다."
+---
+
+## 스냅샷
+
+- 생성 시각(UTC): `2026-06-30T01:17:30.520977Z`
+- 기준: GitHub Trending (daily)
+- 참고: Trending은 스냅샷/가변 지표라, 시간이 지나면 순위와 “stars today” 값이 달라질 수 있습니다.
+
+## 한 눈에 보기
+
+| Rank | Repo | Stars today | Total stars | Lang | 한 줄 요약 |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | [simplex-chat/simplex-chat](https://github.com/simplex-chat/simplex-chat) | +1607 | 16600 | Haskell | SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱! |
+| 2 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | +1425 | 118903 | Shell | A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. |
+| 3 | [cupy/cupy](https://github.com/cupy/cupy) | +352 | 11827 | Python | NumPy & SciPy for GPU |
+| 4 | [altic-dev/FluidVoice](https://github.com/altic-dev/FluidVoice) | +830 | 4401 | Swift | FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :)) |
+| 5 | [soxoj/maigret](https://github.com/soxoj/maigret) | +224 | 34383 | Python | 🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites |
+| 6 | [commaai/openpilot](https://github.com/commaai/openpilot) | +458 | 62774 | Python | openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars. |
+| 7 | [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | +1935 | 126735 | HTML | A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev |
+| 8 | [logto-io/logto](https://github.com/logto-io/logto) | +158 | 12680 | TypeScript | 🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC. |
+| 9 | [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) | +1386 | 6636 | Python | AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。\| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis. |
+| 10 | [browser-use/video-use](https://github.com/browser-use/video-use) | +967 | 11949 | Python | Edit videos with coding agents |
