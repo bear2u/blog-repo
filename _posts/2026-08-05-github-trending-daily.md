@@ -1,0 +1,33 @@
+---
+layout: post
+title: "GitHub Trending 요약 (2026-08-05)"
+date: 2026-08-05
+permalink: /github-trending-2026-08-05/
+author: GitHub Trending
+categories: [개발 트렌드, GitHub]
+tags: [GitHub, Trending, DevTrends]
+original_url: "https://github.com/trending?since=daily"
+snapshot_hash: "305b461ed641"
+excerpt: "2026-08-05 기준 GitHub Trending(daily) 상위 레포지토리 10개를 빠르게 요약합니다."
+---
+
+## 스냅샷
+
+- 생성 시각(UTC): `2026-08-05T03:30:10.387653Z`
+- 기준: GitHub Trending (daily)
+- 참고: Trending은 스냅샷/가변 지표라, 시간이 지나면 순위와 “stars today” 값이 달라질 수 있습니다.
+
+## 한 눈에 보기
+
+| Rank | Repo | Stars today | Total stars | Lang | 한 줄 요약 |
+| ---: | --- | ---: | ---: | --- | --- |
+| 1 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | +1111 | 13906 | TypeScript | TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks. |
+| 2 | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | +2297 | 18129 | PowerShell | Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 \| 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端 |
+| 3 | [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector) | +2540 | 10219 | Rust | Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions. |
+| 4 | [uber/ADR](https://github.com/uber/ADR) | +148 | 730 | Python | ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber. |
+| 5 | [obra/superpowers](https://github.com/obra/superpowers) | +653 | 266595 | Shell | An agentic skills framework & software development methodology that works. |
+| 6 | [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | +783 | 116350 | Jupyter Notebook | 21 Lessons, Get Started Building with Generative AI |
+| 7 | [cypress-io/cypress](https://github.com/cypress-io/cypress) | +11 | 50820 | TypeScript | Fast, easy and reliable testing for anything that runs in a browser. |
+| 8 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | +1711 | 28492 | Jupyter Notebook | AirLLM 70B inference with single 4GB GPU |
+| 9 | [webpack/webpack](https://github.com/webpack/webpack) | +10 | 65947 | JavaScript | A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through "loaders", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff. |
+| 10 | [gabime/spdlog](https://github.com/gabime/spdlog) | +10 | 29393 | C++ | Fast C++ logging library. |
