@@ -1,0 +1,68 @@
+{% if page.url contains "-guide-" %}
+<style>
+.series-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.75rem;
+  margin: 0.85rem 0 1.1rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--tb-border-color, #eaeaea);
+  border-radius: 0.45rem;
+  background: var(--sidebar-bg, #f6f8fa);
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+}
+.series-nav a { text-decoration: none; color: var(--link-color); }
+.series-nav .series-nav-pos { margin-left: auto; font-variant-numeric: tabular-nums; }
+@media (max-width: 576px) {
+  .series-nav .series-nav-pos { margin-left: 0; }
+}
+</style>
+  {% assign url_core = page.url | replace: "/", " " | strip | split: " " | last %}
+  {% if url_core contains "-guide-" %}
+    {% assign series_parts = url_core | split: "-guide-" %}
+    {% assign series_slug = series_parts[0] %}
+    {% assign toc_permalink = "/" | append: series_slug | append: "-guide/" %}
+    {% assign toc_page = site.pages | where: "permalink", toc_permalink | first %}
+    {% unless toc_page %}
+      {% assign toc_page = site.pages | where: "url", toc_permalink | first %}
+    {% endunless %}
+    {% assign chapter_needle = "/" | append: series_slug | append: "-guide-" %}
+    {% assign series_posts = site.posts | where_exp: "p", "p.url contains chapter_needle" | sort: "url" %}
+    {% if series_posts.size > 1 or toc_page %}
+      {% assign series_prev = false %}
+      {% assign series_next = false %}
+      {% assign series_found = false %}
+      {% assign series_idx = 0 %}
+      {% for sp in series_posts %}
+        {% if series_found %}
+          {% assign series_next = sp %}
+          {% break %}
+        {% endif %}
+        {% if sp.url == page.url %}
+          {% assign series_found = true %}
+          {% assign series_idx = forloop.index %}
+        {% else %}
+          {% assign series_prev = sp %}
+        {% endif %}
+      {% endfor %}
+      <nav class="series-nav" aria-label="시리즈 탐색">
+        {% if toc_page %}
+          <a href="{{ toc_page.url | relative_url }}">시리즈 목차</a>
+        {% else %}
+          <span>시리즈</span>
+        {% endif %}
+        {% if series_prev %}
+          <a href="{{ series_prev.url | relative_url }}" rel="prev">이전</a>
+        {% endif %}
+        {% if series_next %}
+          <a href="{{ series_next.url | relative_url }}" rel="next">다음</a>
+        {% endif %}
+        {% if series_posts.size > 0 and series_idx > 0 %}
+          <span class="series-nav-pos">{{ series_idx }} / {{ series_posts.size }}</span>
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% endif %}
+{% endif %}

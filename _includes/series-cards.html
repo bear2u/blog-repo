@@ -1,0 +1,91 @@
+{%- comment -%}
+  Renders unique guide-series cards (newest chapter first).
+  include.limit — max cards (0 = all)
+  include.searchable — add data-search attributes
+{%- endcomment -%}
+{% assign catalog_limit = include.limit | default: 0 | plus: 0 %}
+{% assign seen_series = "|" %}
+{% assign series_shown = 0 %}
+{% assign leftover_needed = include.include_pages %}
+
+<div class="browse-grid"{% if include.searchable %} id="{{ include.grid_id | default: 'series-grid' }}"{% endif %}>
+{% for post in site.posts %}
+  {% if catalog_limit > 0 and series_shown >= catalog_limit %}{% break %}{% endif %}
+  {% unless post.url contains '-guide-' %}{% continue %}{% endunless %}
+  {% if post.url contains '/github-trending-' %}{% continue %}{% endif %}
+
+  {% assign url_core = post.url | replace: '/', ' ' | strip | split: ' ' | last %}
+  {% unless url_core contains '-guide-' %}{% continue %}{% endunless %}
+  {% assign series_parts = url_core | split: '-guide-' %}
+  {% assign series_slug = series_parts[0] %}
+  {% if series_slug == '' %}{% continue %}{% endif %}
+
+  {% assign series_marker = "|" | append: series_slug | append: "|" %}
+  {% if seen_series contains series_marker %}{% continue %}{% endif %}
+  {% assign seen_series = seen_series | append: series_slug | append: "|" %}
+
+  {% assign toc_permalink = "/" | append: series_slug | append: "-guide/" %}
+  {% assign toc_page = site.pages | where: "permalink", toc_permalink | first %}
+  {% unless toc_page %}
+    {% assign toc_page = site.pages | where: "url", toc_permalink | first %}
+  {% endunless %}
+
+  {% assign chapter_needle = "/" | append: series_slug | append: "-guide-" %}
+  {% assign series_chapters = site.posts | where_exp: "p", "p.url contains chapter_needle" %}
+  {% assign chapter_count = series_chapters.size %}
+
+  {% if toc_page %}
+    {% assign card_title = toc_page.title %}
+    {% assign card_href = toc_page.url %}
+    {% assign card_excerpt = toc_page.content | strip_html | strip_newlines | strip | truncate: 110 %}
+  {% else %}
+    {% assign card_title = post.title | replace: " 완벽 가이드", "" %}
+    {% assign card_href = post.url %}
+    {% assign card_excerpt = post.excerpt | strip_html | strip_newlines | strip | truncate: 110 %}
+  {% endif %}
+  {% if card_excerpt == '' %}
+    {% assign card_excerpt = post.excerpt | strip_html | strip_newlines | strip | truncate: 110 %}
+  {% endif %}
+
+  <article class="browse-card"{% if include.searchable %} data-search="{{ card_title | downcase | escape }} {{ series_slug | downcase | escape }} {{ card_excerpt | downcase | escape }}"{% endif %}>
+    <h3><a href="{{ card_href | relative_url }}">{{ card_title }}</a></h3>
+    <div class="browse-meta">
+      {{ post.date | date: "%Y.%m.%d" }}
+      {% if chapter_count > 0 %}
+        · {{ chapter_count }}챕터
+      {% endif %}
+    </div>
+    {% if card_excerpt != '' %}
+      <p class="browse-excerpt">{{ card_excerpt }}</p>
+    {% endif %}
+  </article>
+
+  {% assign series_shown = series_shown | plus: 1 %}
+{% endfor %}
+
+{% if leftover_needed %}
+  {% for gpage in site.pages %}
+    {% unless gpage.name contains '-guide.md' %}{% continue %}{% endunless %}
+    {% assign page_slug = gpage.name | replace: '-guide.md', '' %}
+    {% assign series_marker = "|" | append: page_slug | append: "|" %}
+    {% if seen_series contains series_marker %}{% continue %}{% endif %}
+    {% assign seen_series = seen_series | append: page_slug | append: "|" %}
+
+    {% assign chapter_needle = "/" | append: page_slug | append: "-guide-" %}
+    {% assign series_chapters = site.posts | where_exp: "p", "p.url contains chapter_needle" %}
+    {% assign chapter_count = series_chapters.size %}
+    {% assign card_excerpt = gpage.content | strip_html | strip_newlines | strip | truncate: 110 %}
+
+    <article class="browse-card"{% if include.searchable %} data-search="{{ gpage.title | downcase | escape }} {{ page_slug | downcase | escape }} {{ card_excerpt | downcase | escape }}"{% endif %}>
+      <h3><a href="{{ gpage.url | relative_url }}">{{ gpage.title }}</a></h3>
+      <div class="browse-meta">
+        {% if chapter_count > 0 %}{{ chapter_count }}챕터{% else %}목차{% endif %}
+      </div>
+      {% if card_excerpt != '' %}
+        <p class="browse-excerpt">{{ card_excerpt }}</p>
+      {% endif %}
+    </article>
+    {% assign series_shown = series_shown | plus: 1 %}
+  {% endfor %}
+{% endif %}
+</div>

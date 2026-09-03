@@ -1,0 +1,31 @@
+{% assign max_n = include.limit | default: 16 | plus: 0 %}
+{% assign n = 0 %}
+<ul class="browse-list">
+{% for post in site.posts %}
+  {% if n >= max_n %}{% break %}{% endif %}
+  {% assign post_kind = "글" %}
+  {% assign post_kind_key = "post" %}
+  {% if post.path contains "github-trending" or post.url contains "/github-trending-" %}
+    {% assign post_kind = "트렌딩" %}
+    {% assign post_kind_key = "trending" %}
+  {% elsif post.url contains "-guide-" %}
+    {% assign post_kind = "시리즈" %}
+    {% assign post_kind_key = "series" %}
+  {% endif %}
+  {% if include.kind == "series" %}
+    {% unless post_kind_key == "series" %}{% continue %}{% endunless %}
+  {% elsif include.kind == "trending" %}
+    {% unless post_kind_key == "trending" %}{% continue %}{% endunless %}
+  {% endif %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="browse-list-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+      <span class="browse-list-title"><span class="browse-badge">{{ post_kind }}</span>{{ post.title }}</span>
+      {% if post.excerpt %}
+        <span class="browse-list-sub">{{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}</span>
+      {% endif %}
+    </a>
+  </li>
+  {% assign n = n | plus: 1 %}
+{% endfor %}
+</ul>

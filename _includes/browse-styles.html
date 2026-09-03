@@ -1,0 +1,272 @@
+<style>
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+.browse-intro {
+  color: var(--text-muted-color);
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.browse-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 1.75rem 0;
+}
+.browse-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--btn-border-color, #e9ecef);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--label-color, var(--text-color));
+  background: var(--button-bg, var(--card-bg, #fff));
+  font-size: 0.85rem;
+}
+.browse-actions a:hover {
+  color: var(--link-color);
+  border-color: var(--link-color);
+}
+.browse-section {
+  margin: 0 0 2.25rem 0;
+}
+.browse-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0 0 0.85rem 0;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--tb-border-color, #eaeaea);
+}
+.browse-section-head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--heading-color);
+  letter-spacing: -0.01em;
+}
+.browse-section-head a {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--link-color);
+}
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.85rem;
+}
+.browse-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1rem 1.05rem 0.95rem;
+  border: 1px solid var(--tb-border-color, #eaeaea);
+  border-radius: 0.5rem;
+  background: var(--card-bg, #fff);
+  box-shadow: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.browse-card:hover {
+  border-color: var(--link-color);
+  box-shadow: var(--card-shadow, 0 1px 4px rgb(0 0 0 / 6%));
+}
+.browse-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+.browse-card h3 a {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+.browse-card h3 a:hover {
+  color: var(--link-color);
+}
+.browse-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted-color);
+  margin-bottom: 0.45rem;
+}
+.browse-excerpt {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.browse-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--tb-border-color, #eaeaea);
+  border-radius: 0.5rem;
+  background: var(--card-bg, #fff);
+  overflow: hidden;
+}
+.browse-list li {
+  margin: 0;
+  border-top: 1px solid var(--tb-border-color, #eaeaea);
+}
+.browse-list li:first-child {
+  border-top: 0;
+}
+.browse-list a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.7rem;
+  row-gap: 0.15rem;
+  padding: 0.7rem 0.9rem;
+  text-decoration: none;
+  color: inherit;
+}
+.browse-list a:hover {
+  background: var(--sidebar-bg, #f6f8fa);
+}
+.browse-list a:hover .browse-list-title {
+  color: var(--link-color);
+}
+.browse-list-date {
+  grid-row: 1 / span 2;
+  align-self: start;
+  font-size: 0.75rem;
+  color: var(--text-muted-color);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.2rem;
+  white-space: nowrap;
+}
+.browse-list-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--heading-color);
+  line-height: 1.4;
+}
+.browse-list-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.browse-badge {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid var(--btn-border-color, #e9ecef);
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--label-color, #585858);
+  background: var(--sidebar-bg, #f6f8fa);
+  vertical-align: 0.05em;
+}
+.browse-search {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--btn-border-color, #e9ecef);
+  border-radius: 0.45rem;
+  background: var(--card-bg, #fff);
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+.browse-search:focus {
+  outline: 2px solid var(--link-color);
+  outline-offset: 1px;
+}
+.browse-count {
+  color: var(--text-muted-color);
+  font-size: 0.85rem;
+  margin: 0 0 0.85rem 0;
+}
+.browse-empty {
+  display: none;
+  color: var(--text-muted-color);
+  padding: 1rem 0;
+}
+@media (max-width: 576px) {
+  .browse-grid {
+    grid-template-columns: 1fr;
+  }
+  .browse-list a {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .browse-list-date {
+    grid-row: auto;
+    padding-top: 0;
+  }
+}
+</style>
+
+<style>
+.browse-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.75rem 0;
+}
+.browse-filters button {
+  appearance: none;
+  border: 1px solid var(--btn-border-color, #e9ecef);
+  background: var(--button-bg, var(--card-bg, #fff));
+  color: var(--label-color, var(--text-color));
+  border-radius: 999px;
+  padding: 0.28rem 0.75rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.browse-filters button[aria-pressed="true"] {
+  border-color: var(--heading-color);
+  color: var(--heading-color);
+  background: var(--sidebar-bg, #f6f8fa);
+  font-weight: 600;
+}
+.browse-pane[hidden],
+.browse-card[hidden] {
+  display: none;
+}
+.series-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.75rem;
+  margin: 0.85rem 0 1.1rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--tb-border-color, #eaeaea);
+  border-radius: 0.45rem;
+  background: var(--sidebar-bg, #f6f8fa);
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+}
+.series-nav a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+.series-nav .series-nav-pos {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 576px) {
+  .series-nav .series-nav-pos {
+    margin-left: 0;
+  }
+}
+</style>
